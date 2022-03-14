@@ -8,8 +8,8 @@
 
 *
 {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 ;
     padding: 0;
     box-sizing: border-box;
     outline: none;
@@ -25,53 +25,264 @@ html{
     scroll-padding-top: 5.5pm;
     scroll-behavior: smooth;
 }
+
 header
 { 
    
-    padding: 1rem 7%;
+    padding-top: 2rem;
     background: var(--blue);
     justify-content: center;
     align-items: center;
     box-shadow: var(--box-shadow);
+     box-sizing: border-box;
    
 }
 header .container-header
 {
-    display: flex;
-    justify-content: space-between;
+    padding-bottom: 1rem;
 }
 header .logo
 {
-    width: 6rem;
-    height: 4rem;
-    margin-bottom: 1rem;
+   
+    height: auto;
 }
 header .logo img
 {
+    width: 6rem;
     height: auto;
-    width: 100%;
     object-fit: cover;
 }
 header .formSearch 
 {
-    width: 60%;
+    width: 100%;
     display: flex;
+    padding: 0;
+    box-shadow: var(--box-shadow);
 }
+
 header .formSearch input
 {
-    width: 80%;
-    padding: 1.4rem 1rem;
+    width: 84%;
+    padding: 0 1rem;
     color: var(--light-color);
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     text-transform: none;
 }
 header .formSearch .btn
 {
-    width:20%;
-    padding: 1.4rem 1rem;
+   width: 16%;
+    padding: 0 1rem;
     background: #0D5CB6;
     justify-content: center;
     align-items: center;
     color: #fff;
     font-size: 1.4rem;
+    font-weight:500;
 }
+header .formSearch .btn i{
+    font-size:1.6rem;
+    margin-right: .5rem;
+    color:#eee;
+}
+
+.container-header .acount_user
+{
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-header .acount_user .info_user
+{
+    display: flex;
+   flex-direction: column;
+   padding:.7rem 0 0 1rem;
+   display:column;
+   font-size: 1.2rem;
+   box-sizing: border-box;
+}
+
+.container-header .acount_user i
+{
+    font-size:3rem;
+}
+.container-header .acount_user .info_user .fa-caret-down
+{
+    font-size:1.2rem;
+    padding-left: .5rem;
+    box-sizing:var(--box-shadow)
+}
+
+.container-header .acount_user .info_user span
+{
+    margin-bottom: .5rem;
+}
+.container-header .cart_user
+{
+    color:#fff;
+    display: flex;
+    font-size:1.3rem;
+    justify-content: center;
+    align-items: center;
+}
+.container-header .cart_user .cart_icon
+{
+    position: relative;
+    
+}
+
+.container-header .cart_user .cart_icon i
+{
+    font-size:2.5rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem 1rem;
+}
+
+.container-header .cart_user .cart_icon .amount_cart
+{
+    position:absolute;
+    border-radius: 50%;
+    background-color: rgb(236, 210, 63);
+    text-align:center;
+    padding:.3rem .7rem;
+    color:black;
+    font-weight: 500;
+    font-size:1.4rem;
+    top :.2rem;
+    right:0;
+
+}
+.container-header .cart_user span
+{
+
+}
+header .container_bottom_header 
+{
+    display : flex;
+    color : #fff;
+    font-size: 1.2rem;
+    justify-content: space-between;
+    
+    padding-bottom: 2rem;
+  
+}
+header .container_bottom_header .logo img
+{
+    width :9rem;
+}
+header .container_bottom_header ul
+{
+    display: flex;
+    text-decoration:none;
+    list-style: none;
+    padding: 0;
+
+}
+header .container_bottom_header ul li.item_menu_header
+{
+    padding:0 .6rem;
+    text-transform: lowercase;
+    
+}
+header .container_bottom_header ul li.item_menu_header:first-child
+{
+    padding-left: 0;
+}
+.container_bottom_header .sales_introduction
+{
+    position: relative;
+}
+.container_bottom_header .sales_introduction_box
+{
+    display: flex;
+    border-radius: 2rem;
+    background: rgba(255, 255, 255, 0.25);
+    padding:1.2rem 1rem;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    justify-content: center;
+    height: 2rem;
+    width: 16rem;
+}
+.container_bottom_header .sales_introduction .icon
+{
+    padding-right: .5rem;
+} 
+
+/* --------------------- endheader ------------------------ */
+
+/* ------------------navication----------- */
+
+.navigation {
+    background-color: white;
+    height: 44px;
+  }
+  .content {
+    overflow: hidden;
+    position: relative;
+    padding: 0 8px;
+  }
+  .nav {
+    display: flex;
+    line-height: 44px;
+    transition: all 0.5s ease 0s;
+    width: 200%;
+  }
+  
+  .icon-arrow-left {
+    position: absolute;
+    background-color: #fff;
+    z-index: 9;
+    line-height: 46px;
+    left: 0;
+    display: none;
+    font-size: 2.2rem;
+    cursor: pointer;
+  }
+  
+  .icon-arrow-right {
+    position: absolute;
+    background-color: #fff;
+    z-index: 9;
+    line-height: 46px;
+    right: 0;
+    font-size: 2.2rem;
+    cursor: pointer;
+  }
+.product {
+    display: inline-block;
+    color: black;
+    font-size: 14px;
+    margin: 0px 13px;
+  }
+/* ---------------section slide home--------- */
+
+
+.slide_home
+{
+    height: 274px;
+}
+.slide_home .container-slide_left 
+{
+    width: 100%;
+    height: 274px;
+    overflow: hidden;
+}
+.slide_home .container-slide_left .slide_item img
+{
+    width: 100%;
+    object-fit: cover;
+
+}
+
+
+
+
+
+
+
+
+
