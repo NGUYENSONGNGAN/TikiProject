@@ -1,6 +1,11 @@
 var navArrowLeft = document.querySelector(".icon-arrow-left");
 var navArrowRight = document.querySelector(".icon-arrow-right");
 
+
+
+/* var btn_next = document.querySelector(".container_slide_after_brand_auth .icon_next");
+var btn_prev = document.querySelector(".container_slide_after_brand_auth .icon_prav");
+ */
 navArrowLeft.onclick = function () {
     document.querySelector(".nav").style.transform = "translateX(0%)";
   navArrowRight.style.display = "block";
@@ -8,10 +13,21 @@ navArrowLeft.onclick = function () {
 };
 
 navArrowRight.onclick = function () {
-    document.querySelector(".nav").style.transform = "translateX(-40%)";
+    document.querySelector(".nav").style.transform = "translateX(-20%)";
   navArrowLeft.style.display = "block";
   navArrowRight.style.display = "none";
 };
+/* btn_next.onclick = function(){
+  document.querySelector(".container_slide_after_brand_auth").style.transform = "translateX(-20%)";
+  btn_next.style.display = "block";
+  btn_prev.style.display = "none";
+}
+btn_prev.onclick = function(){
+  document.querySelector(".container_slide_after_brand_auth").style.transform = "translateX(0%)";
+  btn_next.style.display = "block";
+  btn_prev.style.display = "none";
+} */
+
 
 //slide sale left home
 
@@ -77,7 +93,7 @@ var swiper = new Swiper(".slide_priceShock_bottom", {
   loop: true,
   loopFillGroupWithBlank: true,
   navigation: {
-    nextEl: ".btn_next",
-    prevEl: ".btn_prev",
+    nextEl: ".swiper-button-nex",
+    prevEl: ".swiper-button-prev",
   },
 });
