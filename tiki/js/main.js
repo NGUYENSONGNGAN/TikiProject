@@ -3,25 +3,46 @@ var navArrowRight = document.querySelector(".icon-arrow-right");
 
 
 
-/* var btn_next = document.querySelector(".container_slide_after_brand_auth .icon_next");
-var btn_prev = document.querySelector(".container_slide_after_brand_auth .icon_prav");
- */
+var btn_next = document.querySelector(".icon_next_slide_auth");
+var btn_prev = document.querySelector(".icon_prav_slide_auth");
+
+let suggest_item = document.querySelectorAll(".suggest_today_item")
+let suggest_lisst = document.querySelector(".list_suggest_today")
+
+//suggest_item.onclick =()=>
+//{
+  /* suggest_item.classList.toggle('active') */
+ // suggest_item.forEach((e)=>{
+ //   e.classList.toggle('active');
+ // })
+//}
+document.querySelectorAll(".suggest_today_item").
+suggest_item.forEach((e)=>{
+  e.onclick = ()=>{e.classList.toggle('active');}
+})
 navArrowLeft.onclick = function () {
-    document.querySelector(".nav").style.transform = "translateX(0%)";
+  document.querySelector(".nav").style.transform = "translateX(0%)";
   navArrowRight.style.display = "block";
   navArrowLeft.style.display = "none";
 };
 
 navArrowRight.onclick = function () {
-    document.querySelector(".nav").style.transform = "translateX(-20%)";
+  document.querySelector(".nav").style.transform = "translateX(-40%)";
   navArrowLeft.style.display = "block";
   navArrowRight.style.display = "none";
 };
-/* btn_next.onclick = function(){
+
+btn_next.onclick = function () {
   document.querySelector(".container_slide_after_brand_auth").style.transform = "translateX(-20%)";
+  btn_next.style.display = "none";
+  btn_prev.style.display = "block";
+}
+btn_prev.onclick = function () {
+  document.querySelector(".container_slide_after_brand_auth").style.transform = "translateX(0%)";
   btn_next.style.display = "block";
   btn_prev.style.display = "none";
 }
+/* 
 btn_prev.onclick = function(){
   document.querySelector(".container_slide_after_brand_auth").style.transform = "translateX(0%)";
   btn_next.style.display = "block";
@@ -31,21 +52,21 @@ btn_prev.onclick = function(){
 
 //slide sale left home
 
-  /* var swiper = new Swiper(".home-slider", {
-    spaceBetween: 30,
-    centeredSlides: true,
-    autoplay: {
-        delay: 7500,
-        disableOnInteraction: false,
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-   
-    loop: true,
+/* var swiper = new Swiper(".home-slider", {
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: {
+      delay: 7500,
+      disableOnInteraction: false,
+  },
+  pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+  },
+ 
+  loop: true,
 });
- */
+*/
 
 var swiper = new Swiper(".home-slider", {
   spaceBetween: 30,
@@ -62,7 +83,7 @@ var swiper = new Swiper(".home-slider", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  
+
   loop: true,
 });
 
@@ -82,7 +103,7 @@ var swiper = new Swiper(".brand_auth_bottom", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  
+
   loop: true,
 });
 
