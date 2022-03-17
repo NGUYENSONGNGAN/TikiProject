@@ -624,6 +624,10 @@ padding: 0 5px;
     object-fit: cover;
     border-radius: 10px;
 }
+.brand_auth_bottom .swiper-pagination-bullet-active
+{
+    background: rgb(26, 148, 255);
+}
 
 /* ---------------sile after brand auth ------------- */
 .slide_after_brand_auth
@@ -767,11 +771,16 @@ padding: 0 5px;
     object-fit: cover;
 }
 /*------------------suggest today----------------------- */
-.suggest_today 
+/* .suggest_today 
 {
     position: sticky;
     top: 0;
-} 
+} */ 
+/* .suggest_today_top .suggest_today_bottom
+{
+    position: sticky;
+    top: 0;
+} */
 .suggest_today .container_suggest_today .suggest_today_top
 {
     display: flex;
@@ -838,6 +847,7 @@ padding: 0 5px;
     width: 100%;
     box-shadow: var(--box-shadow);
     text-align: center;
+    margin: 0 0 16px;
     padding: 0 0 16px;
 }
 .container_suggest_today_body ul.list_container_suggest_today_body
@@ -848,6 +858,7 @@ padding: 0 5px;
     justify-content:space-between;
     margin-bottom: 4px;
     flex-wrap: wrap;
+    padding:10px;
   
 }
 .container_suggest_today_body ul.list_container_suggest_today_body li.container_suggest_today_body_item
@@ -857,17 +868,18 @@ padding: 0 5px;
     justify-content:center;
     align-items: center;
     text-align: center;
-    cursor: pointer;
+    
     flex-basis: 200px;
     flex-shrink: 0;
     margin-bottom: 1rem;
     padding: 12px;
     border-radius: 10px;
 }
-.container_suggest_today_body ul.list_container_suggest_today_body li.container_suggest_today_body_ite:hover
+li.container_suggest_today_body_item:hover
 {
     opacity: .8;
     box-shadow: var(--box-shadow);
+    cursor: pointer;
 }
 li.container_suggest_today_body_item img
 {
@@ -891,8 +903,6 @@ li.container_suggest_today_body_item .vote_amount
 }
 li.container_suggest_today_body_item .vote_amount .stars i
 {
-  /*   stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" size="16"
-                    color="#fdd836" height="14" width="14" */
     color: #fdd836;
     height: 14;
     width: 14;
@@ -954,7 +964,123 @@ li.container_suggest_today_body_item  .price span.percent_discount
     color: #fff;
 }
 /* --------------------footer---------------------- */
-.footer .infomation
+.footer 
 {
     box-shadow: var(--box-shadow);
+}
+.footer .infomation ul.list_container_infomation
+{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    list-style: none;
+}
+.footer .infomation ul.list_container_infomation li.container_infomation_item
+{
+    width:250px;
+    height:284px;
+    text-align: left;
+    overflow: hidden;
+    
+}
+li.container_infomation_item
+{
+    font-size: 12px;
+    line-height:16px;
+    font-weight:normal;
+    color: rgb(128,128,137);
+}
+.container_infomation_item .heading
+{
+    font-size:16px;
+    line-height:24px;
+    font-weight:500;
+    color: rgb(56,56,61);
+    margin-bottom:12px;
+}
+.container_infomation_item p.hot-line
+{
+    margin-bottom:8px;
+}
+.container_infomation_item p
+{
+    font-size:12px;
+    line-height:16px;
+    color: rgb(128,128,137);
+}
+.container_infomation_item p.hot-line a
+{
+    color: rgb(56,56,61);
+    font-weight:500;
+}
+.container_infomation_item a.footer_links
+{
+    display:block;
+    margin-bottom:8px;
+    color: rgb(128,128,137);
+}
+.container_infomation_item .footer_links_title
+{
+    display: flex;
+}
+.container_infomation_item a.footer_links:hover
+{
+    text-decoration: underline;
+}
+.container_infomation_item .sub_titles{
+    margin: 24px 0 12px;
+}
+.container_infomation_item .img_certification
+{
+    display: flex;
+    width: 100%;
+    gap:8px
+}
+.container_infomation_item .img_certification img
+{
+    height:36px;
+}
+.container_infomation_item .payment
+{
+    width:90%;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+.container_infomation_item .payment img
+{
+    width:100%;
+    object-fit: cover;
+}
+
+.container_infomation_item .tiki_now
+{
+    display:block;
+}
+.container_infomation_item .tiki_now img
+{
+    height:40px;
+}
+.container_infomation_item .download
+{
+    display: flex;
+    gap:8px
+}
+.container_infomation_item .download .download_qr
+{
+    width:80px;
+    height:80px;
+    object-fit: cover;
+}
+.container_infomation_item .download .download_link
+{
+    display: flex;
+    flex-direction:column;
+    width: 120px;
+    justify-content:space-between;s
+}
+.container_infomation_item .download .download_link img
+{
+    width:120px;
+    height:36px;
+    object-fit: cover;
 }

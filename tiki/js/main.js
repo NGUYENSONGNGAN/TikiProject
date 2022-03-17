@@ -69,3 +69,15 @@ var swiper = new Swiper(".brand_auth_bottom", {
   
   loop: true,
 });
+
+var swiper = new Swiper(".slide_priceShock_bottom", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  slidesPerGroup: 3,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  navigation: {
+    nextEl: ".btn_next",
+    prevEl: ".btn_prev",
+  },
+});

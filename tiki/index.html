@@ -220,8 +220,8 @@
             </div>
 
             <div class="container_priceShock_bottom">
-                <div class="grid">
-                    <div class="row">
+                <div class="grid swiper slide_priceShock_bottom">
+                    <div class="row swiper-wrapper">
                         <div class="col l-2 m-2 c-12">
                             <div class="price_Shok_Item">
                                 <div class="image_shock_item">
@@ -521,16 +521,16 @@
         <div class="grid wide">
             <div class="row no-gutters">
                 <div class="container_banner_item">
-                    <div class="col l-3 m-3 c-1 banner_item">
+                    <div class="col l-3 m-1 c-1 banner_item">
                         <img src="image/Primary/1.png" alt="">
                     </div>
-                    <div class="col l-3 m-3 c-1 banner_item">
+                    <div class="col l-3 m-1 c-1 banner_item">
                         <img src="image/Primary/2.png" alt="">
                     </div>
-                    <div class="col l-3 m-3 c-1 banner_item">
+                    <div class="col l-3 m-1 c-1 banner_item">
                         <img src="image/Primary/3.png" alt="">
                     </div>
-                    <div class="col l-3 m-3 c-1 banner_item">
+                    <div class="col l-3 m-1 c-1 banner_item">
                         <img src="image/Primary/4.png" alt="">
                     </div>
                 </div>
@@ -1486,34 +1486,89 @@
     <!-----------------------section footer start----------------------->
     <section class="footer">
         <div class="grid wide">
-        <div class="infomation">
-           
-            <ul class="list_container_infomation">
-                <li class="container_infomation_item">
-                    <h3 class="heading">
-                        Hỗ trợ khách hàng
-                    </h3>
-                    <p class="hot-line">
-                        Hotline:
-                        <a href="tel: 1900-6035">1900-6035</a> <br />
-                        (1000 đ/phút, 8-21h kể cả T7, CN)
-                      </p>
-                      <a href="#" class="footer__links">Các câu hỏi thường gặp</a>
-                      <a href="#" class="footer__links">Gửi yêu cầu hỗ trợ</a>
-                      <a href="#" class="footer__links">Hướng dẫn đặt hàng</a>
-                      <a href="#" class="footer__links">Phương thức vận chuyển</a>
-                      <a href="#" class="footer__links">Chính sách đổi trả</a>
-                      <a href="#" class="footer__links">Hướng dẫn trả góp</a>
-                      <a href="#" class="footer__links">Chính sách hàng nhập khẩu</a>
-                      <p class="footer__links-title">
-                        Hỗ trợ khách hàng:
-                        <a class="footer__links" href="#">hotro@tiki.vn</a>
-                      </p>
-                      <p class="footer__links-title">
-                        Báo lỗi bảo mật:
-                        <a class="footer__links" href="#">security@tiki.vn</a>
-                      </p>
-                </li>
+            <div class="infomation" style="padding : 16px 0;">
+                <ul class="list_container_infomation">
+                    <li class="container_infomation_item">
+                        <h3 class="heading">
+                            Hỗ trợ khách hàng
+                        </h3>
+                        <p class="hot-line">
+                            Hotline:
+                            <a href="#">1900-6035</a> <br />
+                            (1000 đ/phút, 8-21h kể cả T7, CN)
+                        </p>
+                        <a href="#" class="footer_links">Các câu hỏi thường gặp</a>
+                        <a href="#" class="footer_links">Gửi yêu cầu hỗ trợ</a>
+                        <a href="#" class="footer_links">Hướng dẫn đặt hàng</a>
+                        <a href="#" class="footer_links">Phương thức vận chuyển</a>
+                        <a href="#" class="footer_links">Chính sách đổi trả</a>
+                        <a href="#" class="footer_links">Hướng dẫn trả góp</a>
+                        <a href="#" class="footer_links">Chính sách hàng nhập khẩu</a>
+                        <p class="footer_links_title">
+                            Hỗ trợ khách hàng:
+                            <a class="footer_links" href="#" style="padding-left: 2px;">hotro@tiki.vn</a>
+                        </p>
+                        <p class="footer_links_title">
+                            Báo lỗi bảo mật:
+                            <a class="footer_links" href="#" style="padding-left:2px;">security@tiki.vn</a>
+                        </p>
+                    </li>
+                    <li class="container_infomation_item">
+                        <h3 class="heading">Về Tiki</h3>
+                        <a href="#" class="footer_links">Giới thiệu Tiki</a>
+                        <a href="#" class="footer_links">Tuyển dụng</a>
+                        <a href="#" class="footer_links">Chính sách bảo mật thanh toán</a>
+                        <a href="#" class="footer_links">Chính sách bảo mật thông tin cá nhân</a>
+                        <a href="#" class="footer_links">Chính sách giải quyết khiếu nại</a>
+                        <a href="#" class="footer_links">Điều khoản sử dụng</a>
+                        <a href="#" class="footer_links">Giới thiệu Tiki Xu</a>
+                        <a href="#" class="footer_links">Tiếp thị liên kết cùng Tiki</a>
+                        <a href="#" class="footer_links">Bán hàng doanh nghiệp</a>
+                    </li>
+                    <li class="container_infomation_item">
+                        <h3 class="heading">Hợp tác và liên kết</h3>
+                        <a href="" class="footer_links">Quy chế hoạt động Sàn GDTMĐT</a>
+                        <a href="" class="footer_links">Bán hàng cùng Tiki</a>
+                        <h3 class="heading sub-title">Chứng nhận bởi</h3>
+                        <div class="img_certification">
+                            <a href="" class="footer_certification">
+                                <img class="certification-img" src="image/footer/bo-cong-thuong-2.png" alt="" />
+                            </a>
+                            <a href="" class="footer_certification">
+                                <img class="certification-img" src="image/footer/bo-cong-thuong.svg" alt="" />
+                            </a>
+                    </li>
+
+                    <li class="container_infomation_item">
+                        <h3 class="heading">Phương thức thanh toán</h3>
+                        <div class="payment">
+                            <img src="image/footer/pay.png" alt="" class="pay" />
+                        </div>
+                       
+                        <h3 class="heading sub-title">Dịch vụ giao hàng</h3>
+                        <a href="#" class="tiki_now">
+                            <img src="image/footer/tikinow.png" alt="" />
+                        </a>
+                    </li>
+                    <li class="container_infomation_item">
+                        <h3 class="heading">Kết nối với chúng tôi</h3>
+                        <a href="#" class="tiki_now">
+                            <img src="image/footer/fb-ytb.png" alt="" />
+                        </a>
+                        <h3 class="heading sub-title">Tải ứng dụng trên điện thoại</h3>
+                        <div class="download">
+                            <img src="image/footer/qrcode.png" alt="" class="download_qr" />
+                            <div class="download_link">
+                                <a href="" class="apps">
+                                    <img src="image/footer/appstore.png" alt="" class="app" />
+                                </a>
+                                <a href="" class="apps">
+                                    <img src="image/footer/playstore.png" alt="" class="app" />
+                                </a>
+                            </div>
+                        </div>
+            </div>
+            </li>
             </ul>
         </div>
         </div>
