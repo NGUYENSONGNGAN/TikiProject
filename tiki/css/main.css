@@ -925,6 +925,7 @@ padding: 0 5px;
     display: flex;
     list-style: none;
     margin-bottom: 4px;
+    flex-wrap: wrap;
 }
 .suggest_today_bottom .list_suggest_today li.suggest_today_item
 {
@@ -1238,6 +1239,10 @@ li.container_infomation_item
     html{
         font-size: 55%;
     }
+    .slide_home .container-banner_right
+{
+    display:none;
+}
     /* header
     {
         padding: 1rem 2rem;
