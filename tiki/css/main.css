@@ -401,29 +401,30 @@ header .container_bottom_header ul li.item_menu_header:first-child
     font-size: 18px;
     font-weight: 700;
 }
+
+
 .container_price_shork .container_priceShock_bottom
 {
-    height: 267px;
+   
     position: relative;
     overflow: hidden;
 }
-.btn_next,.btn_prev
+.container_priceShock_bottom ul.slide_priceShock_bottom
 {
-    opacity: 0.5;
-    position: absolute;
-    z-index: 100;
-    left: 0;
-    color: #fff;
-    background: var(--black);
-    font-size: 17px;
+    display: flex;
+    margin-top:16px;
+    margin-bottom:20px;
+    height: 267px;
+    list-style: none;
 }
-.container_price_shork .container_priceShock_bottom .price_Shok_Item
+.container_price_shork .container_priceShock_bottom li.price_Shok_Item
 {
     padding: 12px;
 }
 .container_price_shork .container_priceShock_bottom .image_shock_item
 {
     height: 183px;
+    width: 175px;
     overflow: hidden;
     position: relative;
 }
@@ -498,59 +499,24 @@ header .container_bottom_header ul li.item_menu_header:first-child
     min-width: 20px;
     height: 20px;
 }
+.container_priceShock_bottom .icon_prav i,
+.container_priceShock_bottom .icon_next i
 
-
-.container_priceShock_bottom .swiper-button-next,
-.container_priceShock_bottom .swiper-button-prev
 {
-    position: absolute;
-    fill: #fff;
-    background: var(--light-color);
-    padding: 1rem 1.5rem 1rem .5rem;
+    border-radius: 0;
+    background:var(--light-color);
     color: #fff;
-    opacity: .3;
+    font-size: 25px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 15px;
 }
-.container_priceShock_bottom:hover .swiper-button-next,
-.container_priceShock_bottom:hover .swiper-button-prev
+.container_priceShock_bottom .icon_prav i
 {
-    opacity: 1;
+    padding-left: 15px;
+    padding-right: 5px;
 }
-.swiper-button-next:after
-{
-   font-size: 25px; 
-   text-align: center;
-   padding-left: 15px;
-   padding-right: 5px;
-   font-weight: 500;
-}
-.swiper-button-prev:after
-{
-   font-size: 25px; 
-   text-align: center;
-   padding-left: 25px;
-   padding-right: 15px;
-   font-weight: 500;
-}
-.container_priceShock_bottom .swiper-button-prev
-{
-    font-size: 5px;
-}
-.container_priceShock_bottom .swiper-button-next
-{
-    right: 0px;
-}
-.container_priceShock_bottom .swiper-button-prev
-{
-    left: 0px;
-}
-/* 
-  
-  .btn_next:hover,
-  .btn_prev:hover {
-    opacity: 1;
-    cursor: pointer;
-  }
- */
+
 /* -------------------------------Banner after price shock---------------------------- */
 .Banner_after_price_shock .container_banner_item 
 {
@@ -958,7 +924,6 @@ padding: 0 5px;
     width: 100%;
     display: flex;
     list-style: none;
-    justify-content:space-between;
     margin-bottom: 4px;
 }
 .suggest_today_bottom .list_suggest_today li.suggest_today_item
@@ -1238,3 +1203,145 @@ li.container_infomation_item
     height:36px;
     object-fit: cover;
 }
+
+
+
+/* =======================responsive================ */
+
+@media (min-width: 740px) and (max-width: 1240px){
+    .container-header .formSearch
+    {
+        display: flex;
+        min-width:70%
+    }
+ .container-header .acount_user
+ {
+     display: none;
+ }
+ .container-header .cart_user
+ {
+     display: none;
+ }
+.container_bottom_header .listitem_menu_header
+{
+    display: flex;
+    min-width:80%;
+}
+.container_bottom_header .sales_introduction
+{
+    display: none
+}
+}
+
+@media only screen and (max-width:911px)
+{
+    html{
+        font-size: 55%;
+    }
+    /* header
+    {
+        padding: 1rem 2rem;
+    } */
+   
+
+}
+@media (max-width:750px)
+{ 
+    html{
+        font-size: 55%;
+    }
+    .container-header .formSearch
+    {
+        display: flex;
+        width:70%
+    }
+ .container-header .acount_user
+ {
+     display: none;
+ }
+ .container-header .cart_user
+ {
+     display: none;
+ }
+.container_bottom_header .listitem_menu_header
+{
+    display: flex;
+    min-width:80%;
+}
+.slide_home .container-slide_left
+{
+    width: 100%;
+}
+
+.slide_home .container-banner_right
+{
+    display:none;
+}
+.container_bottom_header .sales_introduction
+{
+    display: none
+}
+.footer 
+ {
+     width: 100%;
+
+ }
+ .footer ul.list_container_infomation
+ {
+     display:flex;
+     flex-direction:column;
+     justify-content:center;
+ }
+ .footer ul.list_container_infomation li.container_infomation_item
+ {
+     width: 100%;
+     padding-left: 20px;
+ }
+
+}
+
+   /*  header .navbar{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: .1re, solid rgba(0,0, 0, 0.2);
+    } */
+
+   /*  header .icons #menubars
+    {
+        display: inline-block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: .1re, solid rgba(0,0, 0, 0.2);
+        padding: 1rem;
+        clip-path: polygon(0 0,100% 0,100% 0 , 0 0 );
+    }
+    header .navbar.active
+    {
+        clip-path: polygon(0 0,100% 0,100% 100% , 0 100% );
+    }
+    header .navbar a
+    {
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #eee;
+
+    }
+    #search-form #search-box
+{
+    width: 99%;
+    margin: 0 1rem;
+    
+}
+
+ */
+ 
