@@ -137,3 +137,23 @@ var swiper = new Swiper(".brand_auth_bottom", {
     prevEl: ".swiper-button-prev",
   },
 }); */
+
+
+
+var menusuggest = document.querySelector('.menu_suggest');
+var menu = document.querySelector('.suggest_today_bottom')
+var menuclose = document.querySelector('.menu_close');
+
+menusuggest.onclick = function() {
+  menu.classList.add('open');
+  menusuggest.style.display = "none";
+  menuclose.style.display = "block";
+}
+
+menuclose.onclick = function() {
+  menu.classList.remove('open');
+  menusuggest.style.display = "block";
+  menuclose.style.display = "none";
+}
+
+
