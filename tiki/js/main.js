@@ -36,7 +36,7 @@ btn_prev.onclick = function () {
 
 //slide shockbottom
 btn_next_shockbottom.onclick = function () {
-  document.querySelector(".slide_priceShock_bottom").style.transform = "translateX(-100%)";
+  document.querySelector(".slide_priceShock_bottom").style.transform = "translateX(-104%)";
   btn_next_shockbottom.style.display = "none";
   btn_prev_shockbottom.style.display = "block";
 }
