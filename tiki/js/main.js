@@ -18,7 +18,7 @@ navArrowLeft.onclick = function () {
 };
 
 navArrowRight.onclick = function () {
-  document.querySelector(".nav").style.transform = "translateX(-40%)";
+  document.querySelector(".nav").style.transform = "translateX(-43%)";
   navArrowLeft.style.display = "block";
   navArrowRight.style.display = "none";
 };
