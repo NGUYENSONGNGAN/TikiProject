@@ -1577,6 +1577,7 @@ ul.list_nav_mobile li.nav_mobile_item .Nav_mobile_title
      align-items:center;
      text-align: center;
      margin-top: 0;
+     margin-bottom: 0;
  }
 .slide_home .container-slide_left
 {
@@ -1590,15 +1591,101 @@ li.container_suggest_today_body_item
 .brand_auth .row {
     overflow: hidden;
 }
+.container_price_shork
+{
+    
+    padding:10px;
+    background:#141694;
 }
+.container_price_shork .tittel .priceShock
+{
+    width:70px;
+}
+.container_price_shork .tittel .today
+{
+    width:100px;
+}
+.dealFlashIcon
+{
+    width:15px
+}
+.container_price_shork .container_priceShock_top .time_flashSale span
+{
+    font-size:10px;
+    padding:2px 3px;
+}
+.container_price_shork .container_priceShock_top .time_flashSale i
+{
+    font-size:14px;
+}
+.container_priceShock_bottom ul.slide_priceShock_bottom
+{
+    margin: 0;
+    height:auto;
+}
+.container_price_shork .container_priceShock_bottom li.price_Shok_Item
+{
+    padding:0 8px;
+    position: relative;
+    padding-bottom: 8px;
+}
+.container_price_shork .container_priceShock_bottom .image_shock_item
+{
+    width: 80px;
+    height: 80px;
+}
+.container_price_shork .container_priceShock_bottom .image_shock_item .image_freeship_shock_item
+{
+    display:none
+}
+.container_priceShock_bottom .price
+{
+    display : block;
+    text-align: center;
+    margin:0;
+}
+.container_priceShock_bottom .price span
+{
+    font-size:12px
+}
+.container_priceShock_bottom .price span.percent_discount
+{
+    position:absolute;
+    top: 0;
+    left: 0;
 
+}
+.container_priceShock_bottom .deal_discount
+{
+    line-height: 15px;
+}
+.container_priceShock_bottom .deal_discount span
+{
+    font-size:10px;
+    line-height:15px;
+}
+.container_priceShock_bottom .deal_discount .deals_progress
+{
+    height:15px;
+}
+.icon_gesture_price_shock.icon_next_shockbottom
+{
+    right: 0;
+    top: 26px;
+    padding-left: 4px;
+    padding-right: 1px;
+    border-radius: 5px 0 0 5px;
 
-
-
-
-
-
-
+}
+.icon_gesture_price_shock.icon_prav_shockbottom
+{
+    left: 0;
+    top: 26px;
+    padding-left: 1px;
+    padding-right: 4px;
+    border-radius: 0 5px 5px 0;
+}
+}
 
 
 
@@ -1730,6 +1817,59 @@ li.container_suggest_today_body_item
 }
 .infor_suggest_today
 {
-    padding-left: 50px;
+    padding-left: 20px;
+}
+
+.container_price_shork .tittel .priceShock
+{
+    width:50px;
+}
+.container_price_shork .tittel .today
+{
+    width:60px;
+}
+.dealFlashIcon
+{
+    width:15px
+}
+
+.brand_auth .container_brand_auth .brand_auth_top
+{
+    line-height:15px;
+    font-size:13px;
+}
+.brand_auth .container_brand_auth .brand_auth_top .main_title
+{
+    justify-content: center;
+    align-items: center;
+}
+.brand_auth .container_brand_auth .brand_auth_top .main_title span
+,.brand_auth .container_brand_auth .brand_auth_top a
+{
+    font-size:14px;
+}
+
+.container_list_featured .list_featured_bottom ul.list_featured_item
+{
+    justify-content: flex-start;
+}
+.brand_auth_bottom
+{
+    height:140px
+}
+.brand_auth_bottom .swiper-button-next {
+    right: 15px;
+    top: 53px;
+    border-radius: 5px 0 0 5px;
+}
+.brand_auth_bottom .swiper-button-prev {
+    top: 53px;
+    left: 15px;
+    border-radius: 0 5px 5px 0;
+}
+.slide_home .container-slide_left .slide_item img
+{
+    object-fit:cover;
 }
 }
+
