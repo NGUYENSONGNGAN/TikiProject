@@ -345,10 +345,12 @@ html{
 .container-slide_left .swiper-button-next
 {
     right: 5px;
+    border-radius:5px 0 0 5px;
 }
 .container-slide_left .swiper-button-prev
 {
     left: 0px;
+    border-radius:0 5px  5px 0;
 }
 /* -------------------------section price shock------------------- */
 .container_price_shork
@@ -542,6 +544,7 @@ html{
     padding-left: 10px;
     padding-right: 10px;
     top: 120px;
+    border-radius: 0 5px 5px 0 ;
 }
 
 .icon_gesture_price_shock.icon_next_shockbottom
@@ -550,6 +553,7 @@ html{
     top: 120px;
     padding-left: 10px;
     padding-right: 10px;
+    border-radius: 5px 0 0 5px ;
 }
 
 /* -------------------------------Banner after price shock---------------------------- */
@@ -782,11 +786,14 @@ padding: 0 5px;
 {
     right: 15px;
     top:95px;
+    
+    border-radius: 5px 0 0 5px;
 }
 .brand_auth_bottom .swiper-button-prev
 {
     top:95px;
     left: 15px;
+    border-radius:0 5px 5px 0;
 }
 
 
@@ -834,13 +841,14 @@ padding: 0 5px;
 }
 
 .discount__icon {
-    font-size: 32px;
+    font-size: 17px;
     color: #333;
     opacity: 0.3;
     padding:3px 10px;
-    border-radius:50%;
     background:#eee;
     border:1px solid black;
+    border-radius:50%
+
  }
  .discount__icon:hover
  {
@@ -858,7 +866,45 @@ padding: 0 5px;
     top: 50%;
     right: 0;
  }
+/* .discount__icon {
+    font-size: 32px;
+    color: #333;
+    opacity: 0.3;
+    padding:3px 10px;
+    height: 100%;
+    
+ }
+ .discount__icon:hover
+ {
+     opacity: 1;
+ }
+ .icon_prav_slide_auth {
+     position: absolute;
+     top: 0;
+     display:none;
+     align-items: center;
+     justify-content: center;
+     text-align: center;
+ }
 
+
+ .icon_next_slide_auth {
+    position: absolute;
+    top: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex !important;
+    backdrop-filter:  blur(20px) ;
+ }
+ .icon_next_slide_auth i
+ {
+    border:1px solid rgb(204, 204, 204);;
+    border-radius:50%;
+    padding:5px 10px;
+ }
+ */
 /* -----------------list feature---------- */
 .list_featured{
     margin-top:16px;
@@ -1096,7 +1142,6 @@ padding: 0 5px;
     width:  calc(100%/6);
     margin-bottom: 1rem;
     padding: 12px;
-    border-radius: 10px;
 }
 li.container_suggest_today_body_item:hover
 {
@@ -1140,7 +1185,7 @@ li.container_suggest_today_body_item .vote_amount span
 
 li.container_suggest_today_body_item  .price
 {
-    margin: 1rem 0;
+    margin: 4px 0 0;
    display: flex;
   
    align-items: center;
@@ -1200,7 +1245,7 @@ li.container_suggest_today_body_item  .price span.percent_discount
 /* --------------------footer---------------------- */
 .footer 
 {
-    box-shadow: var(--box-shadow);
+    background: #fff;
 }
 .footer .infomation ul.list_container_infomation
 {
@@ -1538,14 +1583,16 @@ ul.list_nav_mobile li.nav_mobile_item .Nav_mobile_title
     padding:0 10px;
     padding-bottom: 10px;
 }
-}
-.brand_auth .row {
-    overflow: hidden;
-}
 li.container_suggest_today_body_item
 {
     width: calc(100%/4) !important;
 }
+.brand_auth .row {
+    overflow: hidden;
+}
+}
+
+
 
 
 
