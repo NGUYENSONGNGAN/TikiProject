@@ -1369,7 +1369,11 @@ ul.list_nav_mobile li.nav_mobile_item .Nav_mobile_title
 }
 
 
-
+.header_mobile_container
+{
+    width: 100%;
+    display:none;
+}
 .header_mobile_container .header_mobile_container_top
 {
     display: flex;
@@ -1377,8 +1381,12 @@ ul.list_nav_mobile li.nav_mobile_item .Nav_mobile_title
     color: #fff;
     padding-top: 16px;
     padding-left: 15px;
+    padding-right: 15px;
     align-items: center;
     width: 100%;
+    position: relative;
+    text-align: center;
+    justify-content:space-between;
 }
 .header_mobile_container .header_mobile_container_top .header_mobile_logo
 {
@@ -1387,12 +1395,15 @@ ul.list_nav_mobile li.nav_mobile_item .Nav_mobile_title
 }
 .img_freeShip_top
 {
-    width:80px;
+    width:80px;  
+}
+.icon_mobile_logo_top
+{
+    display: flex;
 }
 .img_logo_top
 {
     width:40px;
-    margin-left: 70px;
 }
 .header_mobile_logo img
 {
@@ -1401,7 +1412,7 @@ ul.list_nav_mobile li.nav_mobile_item .Nav_mobile_title
 }
 .bell_home
 {
-    margin-left: 110px;
+    text-align: right;
 }
 .cart_home_top
 {
@@ -1409,12 +1420,15 @@ ul.list_nav_mobile li.nav_mobile_item .Nav_mobile_title
 }
 .header_mobile_container_bottom
 {
-    padding:0  15px;
+    padding:10px  15px;
     width:100%;
+    
 }
 .header_mobile_container_bottom input
 {
     width: 100%;
+    padding: 4px 5px;
+    border-radius:4px
 }
 
 
@@ -1468,6 +1482,10 @@ ul.list_nav_mobile li.nav_mobile_item .Nav_mobile_title
     html{
         font-size: 55%;
     }
+    .header
+    {
+        background: #141694;
+    }
     .header  .container
     {
         display: none;
@@ -1475,6 +1493,10 @@ ul.list_nav_mobile li.nav_mobile_item .Nav_mobile_title
     .slide_home .container-banner_right
 {
     display:none;
+}
+.header_mobile_container
+{
+    display:block;
 }
     /* header
     {
@@ -1502,10 +1524,28 @@ ul.list_nav_mobile li.nav_mobile_item .Nav_mobile_title
  .suggest_today_bottom.open {
      display: block;
  }
-
+ .slide_home
+ {
+     background-color: #141694;
+     display:flex;
+     justify-content:center;
+     align-items:center;
+     text-align: center;
+     margin-top: 0;
+ }
+.slide_home .container-slide_left
+{
+    padding:0 10px;
+    padding-bottom: 10px;
 }
-
-
+}
+.brand_auth .row {
+    overflow: hidden;
+}
+li.container_suggest_today_body_item
+{
+    width: calc(100%/4) !important;
+}
 
 
 
@@ -1635,5 +1675,14 @@ li.container_suggest_today_body_item
 {
  flex-basis: 100%;
  padding:0px 50px;
+}
+.container_slide_after_brand_auth
+{
+    width: 100%;
+    overflow: hidden;
+}
+.infor_suggest_today
+{
+    padding-left: 50px;
 }
 }
