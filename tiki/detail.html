@@ -1,0 +1,1851 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/main_detail.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>TIKI Detail</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="grid wide container">
+            <div class="row header__container">
+                <div class="col l-1 m-1 c-0 logo__container">
+                    <div class="logo-tiki">
+                        <img class="logo-img" src="./image/logo-tiki.png" alt="" />
+                    </div>
+                    <a href="#">
+                        <img class="freeship-img" src="./image/logo-freeship.png" alt="" />
+                    </a>
+                    <div class="mobile__cart">
+                        <i class="far fa-bell"></i>
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                </div>
+                <div class="col l-8 m-10 c-12">
+                    <div class="search-box">
+                        <div class="search__container">
+                            <div class="input-box">
+                                <div class="search-img">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <input class="box" type="text"
+                                    placeholder="Tìm sản phẩm, danh mục hay thương hiệu mong muốn..." />
+                            </div>
+                            <div class="search-btn">
+                                <button class="btn" type="submit">
+                                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                                    Tìm Kiếm
+                                </button>
+                            </div>
+                        </div>
+                        <div class="food-bar">
+                            <a class="food" href="#"> trái cây </a>
+                            <a class="food" href="#"> thịt,trứng </a>
+                            <a class="food" href="#"> rau củ quả </a>
+                            <a class="food" href="#"> sữa,bơ,phô mai </a>
+                            <a class="food" href="#"> hải sản </a>
+                            <a class="food" href="#"> gạo,mì ăn liền </a>
+                            <a class="food" href="#"> đồ uống,bia rượu </a>
+                            <a class="food" href="#"> bánh kẹo </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-2 m-0 c-0">
+                    <div class="login">
+                        <div class="user-icon">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                        <span class="users">
+                            <span class="log-in">Đăng Nhập / Đăng Ký</span>
+                            <span class="user">Tài khoản <i class="fa-solid fa-caret-down"></i></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="col l-1 m-0 c-0">
+                    <div class="carts">
+                        <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                        <span class="cart">Giỏ Hàng</span>
+                        <span class="carts__item">0</span>
+                    </div>
+                </div>
+                <div class="col l-2 m-0 c-0 seller">
+                    <a href="#" class="sell">
+                        <i class="fa-solid fa-store store-icon"></i>
+                        Bán hàng cùng Tiki
+                    </a>
+                </div>
+                <!-- <div class="bell_home"><i class="fa-solid fa-bell"></i></div>
+                <div class="cart_home_top"><i class="fa-solid fa-cart-shopping"></i></div>
+                <div class="img_freeShip_top"><img src="image/logo-freeship.png" alt=""></div> -->
+            </div>
+        </div>
+        <div class="grid wide">
+            <div class="row">
+                <div class="header_mobile_container">
+                    <div class="header_mobile_container_top">
+                        <div class="header_mobile_logo img_freeShip_top"><img src="image/logo-freeship.png" alt="">
+                        </div>
+                        <div class=" header_mobile_logo img_logo_top"><img src="image/logo-tiki.png" alt=""></div>
+                        <div class="icon_mobile_logo_top">
+                            <div class="bell_home"><i class="fa-solid fa-bell"></i></div>
+                            <div class="cart_home_top"><i class="fa-solid fa-cart-shopping"></i></div>
+
+                        </div>
+                    </div>
+                    <div class="header_mobile_container_bottom">
+                        <input type="text" placeholder="Bạn tìm gì hôm nay ?">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="breadcrumb">
+        <div class="grid wide">
+            <div class="row">
+                <div class="breadcrumb_container">
+                    <div class="breadcrumb_main">
+                        <a class="breadcrumb_item" href="#"><span>Trang chủ</span></a>
+                        <span class="icon icon-next"><i class="fa-solid fa-angle-right"></i></span>
+                        <a class="breadcrumb_item" href="#"><span>Điện gia dụng</span></a>
+                        <span class="icon icon-next"><i class="fa-solid fa-angle-right"></i></span>
+                        <a class="breadcrumb_item" href="#"><span>Thiết bị gia đình</span></a>
+                        <span class="icon icon-next"><i class="fa-solid fa-angle-right"></i></span>
+                        <a class="breadcrumb_item" href="#"><span>Quạt điện</span></a>
+                        <span class="icon icon-next"><i class="fa-solid fa-angle-right"></i></span>
+                        <a class="breadcrumb_item" href="#"><span>Quạt hơi nước phun sương</span></a>
+                        <span class="icon icon-next"><i class="fa-solid fa-angle-right"></i></span>
+                        <a class="breadcrumb_item" href="#"><span>MÁY LÀM MÁT KHÔNG KHI HIỆU PERFECT US-0411BR HÀNG NHẬP
+                                KHẨU CHÍNH HÃNG </span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product_detail">
+        <div class="grid wide">
+            <div class="row">
+                <div class="product_detail_main">
+                    <div class="product_detail_imgDetail">
+                        <div class="group_images">
+                            <img src="image/product_detail1.png" alt="">
+                        </div>
+                        <div class="review_images">
+                            <div class="review_images__list">
+                                <div class="pdp_main_view_photo active">
+                                    <img src="image/product_detail1.png" alt="">
+                                </div>
+                                <div class="pdp_main_view_photo">
+                                    <img src="image/product_detail2.png" alt="">
+                                </div>
+                                <div class="pdp_main_view_photo">
+                                    <img src="image/product_detail3.png" alt="">
+                                </div>
+                                <div class="pdp_main_view_photo">
+                                    <img src="image/product_detail4.png" alt="">
+                                </div>
+                                <div class="pdp_main_view_photo">
+                                    <img src="image/product_detail5.png" alt="">
+                                </div>
+                                <div class="pdp_main_view_photo">
+                                    <img src="image/product_detail6.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="Share_icon_container">
+                            <div class="text_title">Chia sẻ : </div>
+                            <img src="image/social-facebook.svg" alt="social-facebook" class="img_first">
+                            <img src="image/social-messenger.svg" alt="social-facebook">
+                            <img src="image/social-pinterest.svg" alt="social-facebook">
+                            <img src="image/social-twitter.svg" alt="social-facebook">
+                            <img src="image/social-copy.svg" alt="social-facebook" class="img_last">
+                            <div class="styles__Separator-sc-1l4uvu3"></div>
+                            <div class="like_info">
+                                <img src="image/icons-like.svg" alt="">
+                                <span>Thích</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space_detail"></div>
+                    <div class="product_detail_content">
+                        <div class="header_detail_content">
+                            <div class="brand">
+                                <span>Thương hiệu : </span>
+                                <a href="#">perfect us</a>
+                            </div>
+                            <h1 class="title">MÁY LÀM MÁT KHÔNG KHI HIỆU PERFECT US-0411BR HÀNG NHẬP KHẨU CHÍNH HÃNG
+                            </h1>
+                            <div class="below_title">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <a href="#" class="number">(Xem 3 đánh giá)</a>
+                                <div class="space_product_detail"> </div>
+                                <div class="product_sold">Đã bán 14</div>
+                            </div>
+                        </div>
+                        <div class="body_detail_content">
+                            <div class="body_detail_content_left">
+                                <div class="price_and_icon">
+                                    <div class="product_price">1.350.000 ₫</div>
+                                    <div class="banner_icon">
+                                        <img src="image/img_left_body.png" alt="" width="130" height="24" class="icon">
+                                        <img src="image/question.svg" alt="" width="11" height="11"
+                                            class="view_more_next">
+                                    </div>
+                                </div>
+                                <div class="discount_coupon">
+                                    <div class="coupon__text">4 Mã Giảm Giá</div>
+                                    <div class="coupon__tags">
+                                        <div class="coupon__tag">Giảm 30K</div>
+                                        <div class="coupon__tag">Giảm 20K</div>
+                                        <div class="coupon__tag">Giảm 50K</div>
+                                        <img src="image/coupon_next.png" alt="" class="View_more_coupon">
+                                    </div>
+
+                                </div>
+                                <div class="delivery_zone">
+                                    <div class="delivery_zone__heading">
+                                        <span>Giao đến</span>
+                                        <span class="address">Q. 1, P. Bến Nghé, Hồ Chí Minh</span>
+                                        -
+                                        <span class="address_change">Đổi địa chỉ</span>
+                                    </div>
+                                    <div class="delivery_zone__inner">
+                                        <div class="shipping_info__item">
+                                            <div class="shipping_info__item__header">
+                                                <div class="shipping_info__item__header__logo" style="width:49px">
+                                                    <img src="image/icon_tikinow.png" height="14" width="49" alt="">
+                                                </div>
+                                                <div class="divider"></div>
+                                                <div class="shipping_info__item__header__highlight">
+                                                    Trước 14:00 hôm nay
+                                                </div>
+                                            </div>
+                                            <div class="shipping_info__item__note">93.000đ</div>
+                                        </div>
+                                        <div class="shipping_info__item">
+                                            <div class="shipping_info__item__header">
+                                                <div class="shipping_info__item__header__logo" style="width:49px">
+                                                    <img src="image/icon_tikifast.png" height="14" width="49" alt="">
+                                                </div>
+                                                <div class="divider"></div>
+                                                <div class="shipping_info__item__header__highlight">
+                                                    Ngày mai, trước 23:00
+                                                </div>
+                                            </div>
+                                            <div class="shipping_info__item__note">15.500đ (đã trừ 50K Freeship)</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="add_to_cart">
+                                    <div class="qty_and_message">
+                                        <p class="lable">Số lượng</p>
+                                    </div>
+                                    <div class="group_input">
+                                        <button class="disable">
+                                            <img src="image/icons-remove.svg" width="20" height="20" alt="">
+                                        </button>
+                                        <input type="text" value="1">
+                                        <button>
+                                            <img src="image/icons-add.svg" width="20" height="20" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="group_button">
+                                        <button class="btn btn_add_to_cart">Chọn mua</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="body_detail_content_right">
+                                <div class="seller_info">
+                                    <div class="webpimg_container">
+                                        <img src="image/efb7c4d0a1ccfb53b8cc32d7756295d2.jpg.webp" style="width: 44px;"
+                                            alt="">
+                                    </div>
+                                    <span class="seller_name">PERFECT US</span>
+                                </div>
+                                <div class="seller_detail">
+                                    <div class="item">
+                                        <div class="title"><span>4.2 / 5</span>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+
+                                        <div class="sub_title">85</div>
+                                    </div>
+
+                                    <div class="border_left"></div>
+                                    <div class="item normal">
+                                        <div class="title"><span>11</span></div>
+                                        <div class="sub_title">Theo dõi</div>
+                                    </div>
+                                </div>
+                                <div class="seller_action">
+                                    <div class="action">
+                                        <img src="image/d735c33edfdc6cf6aeb6e183bec28869.png">
+                                        <span>Xem Shop</span>
+                                    </div>
+                                    <div class="action">
+                                        <img src="image/eeda00767e26b5873030e44f951441c4.png">
+                                        <span>Theo Dõi</span>
+                                    </div>
+                                </div>
+                                <div class="warranty_detail">
+                                    <div class="warranty_item">
+                                        <span class="itemLeft">Thời gian bảo hành</span>
+                                        <span class="itemRight">12 Tháng</span>
+                                    </div>
+                                    <div class="warranty_item">
+                                        <span class="itemLeft">Hình thức bảo hành</span>
+                                        <span class="itemRight">Hóa đơn</span>
+                                    </div>
+                                    <div class="warranty_item">
+                                        <span class="itemLeft">Nơi bảo hành</span>
+                                        <span class="itemRight">Bảo hành chính hãng</span>
+                                    </div>
+                                    <div class="warranty_item">
+                                        <span class="itemLeft">Hướng dẫn bảo hành</span>
+                                        <span class="itemRight text_link ">Xem chi tiết</span>
+                                    </div>
+                                </div>
+                                <div class="Curtom_benefit">
+                                    <div class="benefit_item">
+                                        <img alt="compensation-icon" src="image/security.png" height="32" width="32">
+                                        <span>Hoàn tiền<br><b>111%</b><br>nếu hàng giả</span>
+                                    </div>
+                                    <div class="benefit_item">
+                                        <img alt="compensation-icon" src="image/like_icon.png" height="32" width="32">
+                                        <span>Mở hộp<br>kiểm tra<br>nhận hàng</span>
+                                    </div>
+                                    <div class="benefit_item">
+                                        <img alt="compensation-icon" src="image/prev_icon.png" height="32" width="32">
+                                        <span>Đổi trả trong<br><b>7 ngày</b><br>nếu sp lỗi</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product_slide">
+        <div class="grid wide">
+            <div class="row">
+            <h2 class="block_title">Sản Phẩm Tương Tự</h2>
+            <div class="slider_container">
+                <div class="slick_arrow prev btn_prev_slide">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="slick_arrow next btn_next_slide">
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="slick_list">
+                    <div class="slick_track">
+                        <div class="slick_Item">
+                            <div class="item_Product_img">
+                                <img src="image/slide_product/img1.webp" alt="">
+                                <img src="image/suggestion_img/freeShip.png" class="img_freeshipp">
+                            </div>
+                            <div class="title">
+                                <p
+                                    style="background: rgb(242, 242, 242); line-height: 12px; display: inline-block; padding: 0px 4px; font-size: 9px; margin: 0px 4px 0px 0px; position: relative; top: -1px; border-radius: 2px;">
+                                    Ad</p>
+                                <h3>Máy Làm Mát Không Khí Sunhouse SHD7719 - Hàng Chính Hãng</h3>
+                            </div>
+                            <div class="bottom">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div
+                                    style="display: flex; align-items: center; color: rgb(120, 120, 120); line-height: normal; font-size: 11px; padding-left: 4px;">
+                                    <div style="width: 1px; height: 9px; background-color: rgb(199, 199, 199);"></div>
+                                    <div data-view-id="pdp_quantity_sold" style="padding-left: 6px;">Đã bán 29</div>
+                                </div>
+                            </div>
+                            <p class="price has-discount">3.699.000 ₫<span class="percent">-36%</span></p>
+                        </div>
+                        <div class="slick_Item">
+                            <div class="item_Product_img">
+                                <img src="image/slide_product/img2.webp" alt="">
+                                <img src="image/suggestion_img/freeShip.png" class="img_freeshipp">
+                            </div>
+                            <div class="title">
+                                <p
+                                    style="background: rgb(242, 242, 242); line-height: 12px; display: inline-block; padding: 0px 4px; font-size: 9px; margin: 0px 4px 0px 0px; position: relative; top: -1px; border-radius: 2px;">
+                                    Ad</p>
+                                <h3>Máy Làm Mát Không Khí Sunhouse SHD7719 - Hàng Chính Hãng</h3>
+                            </div>
+                            <div class="bottom">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div
+                                    style="display: flex; align-items: center; color: rgb(120, 120, 120); line-height: normal; font-size: 11px; padding-left: 4px;">
+                                    <div style="width: 1px; height: 9px; background-color: rgb(199, 199, 199);"></div>
+                                    <div data-view-id="pdp_quantity_sold" style="padding-left: 6px;">Đã bán 29</div>
+                                </div>
+                            </div>
+                            <p class="price has-discount">3.699.000 ₫<span class="percent">-36%</span></p>
+                        </div>
+                        <div class="slick_Item">
+                            <div class="item_Product_img">
+                                <img src="image/slide_product/img3.webp" alt="">
+                                <img src="image/suggestion_img/freeShip.png" class="img_freeshipp">
+                            </div>
+                            <div class="title">
+                                <p
+                                    style="background: rgb(242, 242, 242); line-height: 12px; display: inline-block; padding: 0px 4px; font-size: 9px; margin: 0px 4px 0px 0px; position: relative; top: -1px; border-radius: 2px;">
+                                    Ad</p>
+                                <h3>Máy Làm Mát Không Khí Sunhouse SHD7719 - Hàng Chính Hãng</h3>
+                            </div>
+                            <div class="bottom">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div
+                                    style="display: flex; align-items: center; color: rgb(120, 120, 120); line-height: normal; font-size: 11px; padding-left: 4px;">
+                                    <div style="width: 1px; height: 9px; background-color: rgb(199, 199, 199);"></div>
+                                    <div data-view-id="pdp_quantity_sold" style="padding-left: 6px;">Đã bán 29</div>
+                                </div>
+                            </div>
+                            <p class="price has-discount">3.699.000 ₫<span class="percent">-36%</span></p>
+                        </div>
+                        <div class="slick_Item">
+                            <div class="item_Product_img">
+                                <img src="image/slide_product/img4.webp" alt="">
+                                <img src="image/suggestion_img/freeShip.png" class="img_freeshipp">
+                            </div>
+                            <div class="title">
+                                <p
+                                    style="background: rgb(242, 242, 242); line-height: 12px; display: inline-block; padding: 0px 4px; font-size: 9px; margin: 0px 4px 0px 0px; position: relative; top: -1px; border-radius: 2px;">
+                                    Ad</p>
+                                <h3>Máy Làm Mát Không Khí Sunhouse SHD7719 - Hàng Chính Hãng</h3>
+                            </div>
+                            <div class="bottom">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div
+                                    style="display: flex; align-items: center; color: rgb(120, 120, 120); line-height: normal; font-size: 11px; padding-left: 4px;">
+                                    <div style="width: 1px; height: 9px; background-color: rgb(199, 199, 199);"></div>
+                                    <div data-view-id="pdp_quantity_sold" style="padding-left: 6px;">Đã bán 29</div>
+                                </div>
+                            </div>
+                            <p class="price has-discount">3.699.000 ₫<span class="percent">-36%</span></p>
+                        </div>
+                        <div class="slick_Item">
+                            <div class="item_Product_img">
+                                <img src="image/slide_product/img5.webp" alt="">
+                                <img src="image/suggestion_img/freeShip.png" class="img_freeshipp">
+                            </div>
+                            <div class="title">
+                                <p
+                                    style="background: rgb(242, 242, 242); line-height: 12px; display: inline-block; padding: 0px 4px; font-size: 9px; margin: 0px 4px 0px 0px; position: relative; top: -1px; border-radius: 2px;">
+                                    Ad</p>
+                                <h3>Máy Làm Mát Không Khí Sunhouse SHD7719 - Hàng Chính Hãng</h3>
+                            </div>
+                            <div class="bottom">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div
+                                    style="display: flex; align-items: center; color: rgb(120, 120, 120); line-height: normal; font-size: 11px; padding-left: 4px;">
+                                    <div style="width: 1px; height: 9px; background-color: rgb(199, 199, 199);"></div>
+                                    <div data-view-id="pdp_quantity_sold" style="padding-left: 6px;">Đã bán 29</div>
+                                </div>
+                            </div>
+                            <p class="price has-discount">3.699.000 ₫<span class="percent">-36%</span></p>
+                        </div>
+                        <div class="slick_Item">
+                            <div class="item_Product_img">
+                                <img src="image/slide_product/img6.webp" alt="">
+                                <img src="image/suggestion_img/freeShip.png" class="img_freeshipp">
+                            </div>
+                            <div class="title">
+                                <p
+                                    style="background: rgb(242, 242, 242); line-height: 12px; display: inline-block; padding: 0px 4px; font-size: 9px; margin: 0px 4px 0px 0px; position: relative; top: -1px; border-radius: 2px;">
+                                    Ad</p>
+                                <h3>Máy Làm Mát Không Khí Sunhouse SHD7719 - Hàng Chính Hãng</h3>
+                            </div>
+                            <div class="bottom">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div
+                                    style="display: flex; align-items: center; color: rgb(120, 120, 120); line-height: normal; font-size: 11px; padding-left: 4px;">
+                                    <div style="width: 1px; height: 9px; background-color: rgb(199, 199, 199);"></div>
+                                    <div data-view-id="pdp_quantity_sold" style="padding-left: 6px;">Đã bán 29</div>
+                                </div>
+                            </div>
+                            <p class="price has-discount">3.699.000 ₫<span class="percent">-36%</span></p>
+                        </div>
+                        <div class="slick_Item">
+                            <div class="item_Product_img">
+                                <img src="image/slide_product/img7.webp" alt="">
+                                <img src="image/suggestion_img/freeShip.png" class="img_freeshipp">
+                            </div>
+                            <div class="title">
+                                <p
+                                    style="background: rgb(242, 242, 242); line-height: 12px; display: inline-block; padding: 0px 4px; font-size: 9px; margin: 0px 4px 0px 0px; position: relative; top: -1px; border-radius: 2px;">
+                                    Ad</p>
+                                <h3>Máy Làm Mát Không Khí Sunhouse SHD7719 - Hàng Chính Hãng</h3>
+                            </div>
+                            <div class="bottom">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div
+                                    style="display: flex; align-items: center; color: rgb(120, 120, 120); line-height: normal; font-size: 11px; padding-left: 4px;">
+                                    <div style="width: 1px; height: 9px; background-color: rgb(199, 199, 199);"></div>
+                                    <div data-view-id="pdp_quantity_sold" style="padding-left: 6px;">Đã bán 29</div>
+                                </div>
+                            </div>
+                            <p class="price has-discount">3.699.000 ₫<span class="percent">-36%</span></p>
+                        </div>
+                        <div class="slick_Item">
+                            <div class="item_Product_img">
+                                <img src="image/slide_product/img8.webp" alt="">
+                                <img src="image/suggestion_img/freeShip.png" class="img_freeshipp">
+                            </div>
+                            <div class="title">
+                                <p
+                                    style="background: rgb(242, 242, 242); line-height: 12px; display: inline-block; padding: 0px 4px; font-size: 9px; margin: 0px 4px 0px 0px; position: relative; top: -1px; border-radius: 2px;">
+                                    Ad</p>
+                                <h3>Máy Làm Mát Không Khí Sunhouse SHD7719 - Hàng Chính Hãng</h3>
+                            </div>
+                            <div class="bottom">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div
+                                    style="display: flex; align-items: center; color: rgb(120, 120, 120); line-height: normal; font-size: 11px; padding-left: 4px;">
+                                    <div style="width: 1px; height: 9px; background-color: rgb(199, 199, 199);"></div>
+                                    <div data-view-id="pdp_quantity_sold" style="padding-left: 6px;">Đã bán 29</div>
+                                </div>
+                            </div>
+                            <p class="price has-discount">3.699.000 ₫<span class="percent">-36%</span></p>
+                        </div>
+                        <div class="slick_Item">
+                            <div class="item_Product_img">
+                                <img src="image/slide_product/img9.webp" alt="">
+                                <img src="image/suggestion_img/freeShip.png" class="img_freeshipp">
+                            </div>
+                            <div class="title">
+                                <p
+                                    style="background: rgb(242, 242, 242); line-height: 12px; display: inline-block; padding: 0px 4px; font-size: 9px; margin: 0px 4px 0px 0px; position: relative; top: -1px; border-radius: 2px;">
+                                    Ad</p>
+                                <h3>Máy Làm Mát Không Khí Sunhouse SHD7719 - Hàng Chính Hãng</h3>
+                            </div>
+                            <div class="bottom">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div
+                                    style="display: flex; align-items: center; color: rgb(120, 120, 120); line-height: normal; font-size: 11px; padding-left: 4px;">
+                                    <div style="width: 1px; height: 9px; background-color: rgb(199, 199, 199);"></div>
+                                    <div data-view-id="pdp_quantity_sold" style="padding-left: 6px;">Đã bán 29</div>
+                                </div>
+                            </div>
+                            <p class="price has-discount">3.699.000 ₫<span class="percent">-36%</span></p>
+                        </div>
+                        <div class="slick_Item">
+                            <div class="item_Product_img">
+                                <img src="image/slide_product/img10.webp" alt="">
+                                <img src="image/suggestion_img/freeShip.png" class="img_freeshipp">
+                            </div>
+                            <div class="title">
+                                <p
+                                    style="background: rgb(242, 242, 242); line-height: 12px; display: inline-block; padding: 0px 4px; font-size: 9px; margin: 0px 4px 0px 0px; position: relative; top: -1px; border-radius: 2px;">
+                                    Ad</p>
+                                <h3>Máy Làm Mát Không Khí Sunhouse SHD7719 - Hàng Chính Hãng</h3>
+                            </div>
+                            <div class="bottom">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div
+                                    style="display: flex; align-items: center; color: rgb(120, 120, 120); line-height: normal; font-size: 11px; padding-left: 4px;">
+                                    <div style="width: 1px; height: 9px; background-color: rgb(199, 199, 199);"></div>
+                                    <div data-view-id="pdp_quantity_sold" style="padding-left: 6px;">Đã bán 29</div>
+                                </div>
+                            </div>
+                            <p class="price has-discount">3.699.000 ₫<span class="percent">-36%</span></p>
+                        </div>
+                        <div class="slick_Item">
+                            <div class="item_Product_img">
+                                <img src="image/slide_product/img1.webp" alt="">
+                                <img src="image/suggestion_img/freeShip.png" class="img_freeshipp">
+                            </div>
+                            <div class="title">
+                                <p
+                                    style="background: rgb(242, 242, 242); line-height: 12px; display: inline-block; padding: 0px 4px; font-size: 9px; margin: 0px 4px 0px 0px; position: relative; top: -1px; border-radius: 2px;">
+                                    Ad</p>
+                                <h3>Máy Làm Mát Không Khí Sunhouse SHD7719 - Hàng Chính Hãng</h3>
+                            </div>
+                            <div class="bottom">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div
+                                    style="display: flex; align-items: center; color: rgb(120, 120, 120); line-height: normal; font-size: 11px; padding-left: 4px;">
+                                    <div style="width: 1px; height: 9px; background-color: rgb(199, 199, 199);"></div>
+                                    <div data-view-id="pdp_quantity_sold" style="padding-left: 6px;">Đã bán 29</div>
+                                </div>
+                            </div>
+                            <p class="price has-discount">3.699.000 ₫<span class="percent">-36%</span></p>
+                        </div>
+                        <div class="slick_Item">
+                            <div class="item_Product_img">
+                                <img src="image/slide_product/img2.webp" alt="">
+                                <img src="image/suggestion_img/freeShip.png" class="img_freeshipp">
+                            </div>
+                            <div class="title">
+                                <p
+                                    style="background: rgb(242, 242, 242); line-height: 12px; display: inline-block; padding: 0px 4px; font-size: 9px; margin: 0px 4px 0px 0px; position: relative; top: -1px; border-radius: 2px;">
+                                    Ad</p>
+                                <h3>Máy Làm Mát Không Khí Sunhouse SHD7719 - Hàng Chính Hãng</h3>
+                            </div>
+                            <div class="bottom">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div
+                                    style="display: flex; align-items: center; color: rgb(120, 120, 120); line-height: normal; font-size: 11px; padding-left: 4px;">
+                                    <div style="width: 1px; height: 9px; background-color: rgb(199, 199, 199);"></div>
+                                    <div data-view-id="pdp_quantity_sold" style="padding-left: 6px;">Đã bán 29</div>
+                                </div>
+                            </div>
+                            <p class="price has-discount">3.699.000 ₫<span class="percent">-36%</span></p>
+                        </div>
+                        <div class="slick_Item">
+                            <div class="item_Product_img">
+                                <img src="image/slide_product/img3.webp" alt="">
+                                <img src="image/suggestion_img/freeShip.png" class="img_freeshipp">
+                            </div>
+                            <div class="title">
+                                <p
+                                    style="background: rgb(242, 242, 242); line-height: 12px; display: inline-block; padding: 0px 4px; font-size: 9px; margin: 0px 4px 0px 0px; position: relative; top: -1px; border-radius: 2px;">
+                                    Ad</p>
+                                <h3>Máy Làm Mát Không Khí Sunhouse SHD7719 - Hàng Chính Hãng</h3>
+                            </div>
+                            <div class="bottom">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div
+                                    style="display: flex; align-items: center; color: rgb(120, 120, 120); line-height: normal; font-size: 11px; padding-left: 4px;">
+                                    <div style="width: 1px; height: 9px; background-color: rgb(199, 199, 199);"></div>
+                                    <div data-view-id="pdp_quantity_sold" style="padding-left: 6px;">Đã bán 29</div>
+                                </div>
+                            </div>
+                            <p class="price has-discount">3.699.000 ₫<span class="percent">-36%</span></p>
+                        </div>
+                        <div class="slick_Item">
+                            <div class="item_Product_img">
+                                <img src="image/slide_product/img4.webp" alt="">
+                                <img src="image/suggestion_img/freeShip.png" class="img_freeshipp">
+                            </div>
+                            <div class="title">
+                                <p
+                                    style="background: rgb(242, 242, 242); line-height: 12px; display: inline-block; padding: 0px 4px; font-size: 9px; margin: 0px 4px 0px 0px; position: relative; top: -1px; border-radius: 2px;">
+                                    Ad</p>
+                                <h3>Máy Làm Mát Không Khí Sunhouse SHD7719 - Hàng Chính Hãng</h3>
+                            </div>
+                            <div class="bottom">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div
+                                    style="display: flex; align-items: center; color: rgb(120, 120, 120); line-height: normal; font-size: 11px; padding-left: 4px;">
+                                    <div style="width: 1px; height: 9px; background-color: rgb(199, 199, 199);"></div>
+                                    <div data-view-id="pdp_quantity_sold" style="padding-left: 6px;">Đã bán 29</div>
+                                </div>
+                            </div>
+                            <p class="price has-discount">3.699.000 ₫<span class="percent">-36%</span></p>
+                        </div>
+                        <div class="slick_Item">
+                            <div class="item_Product_img">
+                                <img src="image/slide_product/img5.webp" alt="">
+                                <img src="image/suggestion_img/freeShip.png" class="img_freeshipp">
+                            </div>
+                            <div class="title">
+                                <p
+                                    style="background: rgb(242, 242, 242); line-height: 12px; display: inline-block; padding: 0px 4px; font-size: 9px; margin: 0px 4px 0px 0px; position: relative; top: -1px; border-radius: 2px;">
+                                    Ad</p>
+                                <h3>Máy Làm Mát Không Khí Sunhouse SHD7719 - Hàng Chính Hãng</h3>
+                            </div>
+                            <div class="bottom">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div
+                                    style="display: flex; align-items: center; color: rgb(120, 120, 120); line-height: normal; font-size: 11px; padding-left: 4px;">
+                                    <div style="width: 1px; height: 9px; background-color: rgb(199, 199, 199);"></div>
+                                    <div data-view-id="pdp_quantity_sold" style="padding-left: 6px;">Đã bán 29</div>
+                                </div>
+                            </div>
+                            <p class="price has-discount">3.699.000 ₫<span class="percent">-36%</span></p>
+                        </div>
+                        <div class="slick_Item">
+                            <div class="item_Product_img">
+                                <img src="image/slide_product/img6.webp" alt="">
+                                <img src="image/suggestion_img/freeShip.png" class="img_freeshipp">
+                            </div>
+                            <div class="title">
+                                <p
+                                    style="background: rgb(242, 242, 242); line-height: 12px; display: inline-block; padding: 0px 4px; font-size: 9px; margin: 0px 4px 0px 0px; position: relative; top: -1px; border-radius: 2px;">
+                                    Ad</p>
+                                <h3>Máy Làm Mát Không Khí Sunhouse SHD7719 - Hàng Chính Hãng</h3>
+                            </div>
+                            <div class="bottom">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div
+                                    style="display: flex; align-items: center; color: rgb(120, 120, 120); line-height: normal; font-size: 11px; padding-left: 4px;">
+                                    <div style="width: 1px; height: 9px; background-color: rgb(199, 199, 199);"></div>
+                                    <div data-view-id="pdp_quantity_sold" style="padding-left: 6px;">Đã bán 29</div>
+                                </div>
+                            </div>
+                            <p class="price has-discount">3.699.000 ₫<span class="percent">-36%</span></p>
+                        </div>
+                        <div class="slick_Item">
+                            <div class="item_Product_img">
+                                <img src="image/slide_product/img7.webp" alt="">
+                                <img src="image/suggestion_img/freeShip.png" class="img_freeshipp">
+                            </div>
+                            <div class="title">
+                                <p
+                                    style="background: rgb(242, 242, 242); line-height: 12px; display: inline-block; padding: 0px 4px; font-size: 9px; margin: 0px 4px 0px 0px; position: relative; top: -1px; border-radius: 2px;">
+                                    Ad</p>
+                                <h3>Máy Làm Mát Không Khí Sunhouse SHD7719 - Hàng Chính Hãng</h3>
+                            </div>
+                            <div class="bottom">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div
+                                    style="display: flex; align-items: center; color: rgb(120, 120, 120); line-height: normal; font-size: 11px; padding-left: 4px;">
+                                    <div style="width: 1px; height: 9px; background-color: rgb(199, 199, 199);"></div>
+                                    <div data-view-id="pdp_quantity_sold" style="padding-left: 6px;">Đã bán 29</div>
+                                </div>
+                            </div>
+                            <p class="price has-discount">3.699.000 ₫<span class="percent">-36%</span></p>
+                        </div>
+                        <div class="slick_Item">
+                            <div class="item_Product_img">
+                                <img src="image/slide_product/img8.webp" alt="">
+                                <img src="image/suggestion_img/freeShip.png" class="img_freeshipp">
+                            </div>
+                            <div class="title">
+                                <p
+                                    style="background: rgb(242, 242, 242); line-height: 12px; display: inline-block; padding: 0px 4px; font-size: 9px; margin: 0px 4px 0px 0px; position: relative; top: -1px; border-radius: 2px;">
+                                    Ad</p>
+                                <h3>Máy Làm Mát Không Khí Sunhouse SHD7719 - Hàng Chính Hãng</h3>
+                            </div>
+                            <div class="bottom">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div
+                                    style="display: flex; align-items: center; color: rgb(120, 120, 120); line-height: normal; font-size: 11px; padding-left: 4px;">
+                                    <div style="width: 1px; height: 9px; background-color: rgb(199, 199, 199);"></div>
+                                    <div data-view-id="pdp_quantity_sold" style="padding-left: 6px;">Đã bán 29</div>
+                                </div>
+                            </div>
+                            <p class="price has-discount">3.699.000 ₫<span class="percent">-36%</span></p>
+                        </div>
+                        <div class="slick_Item">
+                            <div class="item_Product_img">
+                                <img src="image/slide_product/img9.webp" alt="">
+                                <img src="image/suggestion_img/freeShip.png" class="img_freeshipp">
+                            </div>
+                            <div class="title">
+                                <p
+                                    style="background: rgb(242, 242, 242); line-height: 12px; display: inline-block; padding: 0px 4px; font-size: 9px; margin: 0px 4px 0px 0px; position: relative; top: -1px; border-radius: 2px;">
+                                    Ad</p>
+                                <h3>Máy Làm Mát Không Khí Sunhouse SHD7719 - Hàng Chính Hãng</h3>
+                            </div>
+                            <div class="bottom">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div
+                                    style="display: flex; align-items: center; color: rgb(120, 120, 120); line-height: normal; font-size: 11px; padding-left: 4px;">
+                                    <div style="width: 1px; height: 9px; background-color: rgb(199, 199, 199);"></div>
+                                    <div data-view-id="pdp_quantity_sold" style="padding-left: 6px;">Đã bán 29</div>
+                                </div>
+                            </div>
+                            <p class="price has-discount">3.699.000 ₫<span class="percent">-36%</span></p>
+                        </div>
+                        <div class="slick_Item">
+                            <div class="item_Product_img">
+                                <img src="image/slide_product/img10.webp" alt="">
+                                <img src="image/suggestion_img/freeShip.png" class="img_freeshipp">
+                            </div>
+                            <div class="title">
+                                <p
+                                    style="background: rgb(242, 242, 242); line-height: 12px; display: inline-block; padding: 0px 4px; font-size: 9px; margin: 0px 4px 0px 0px; position: relative; top: -1px; border-radius: 2px;">
+                                    Ad</p>
+                                <h3>Máy Làm Mát Không Khí Sunhouse SHD7719 - Hàng Chính Hãng</h3>
+                            </div>
+                            <div class="bottom">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div
+                                    style="display: flex; align-items: center; color: rgb(120, 120, 120); line-height: normal; font-size: 11px; padding-left: 4px;">
+                                    <div style="width: 1px; height: 9px; background-color: rgb(199, 199, 199);"></div>
+                                    <div data-view-id="pdp_quantity_sold" style="padding-left: 6px;">Đã bán 29</div>
+                                </div>
+                            </div>
+                            <p class="price has-discount">3.699.000 ₫<span class="percent">-36%</span></p>
+                        </div>
+                        <div class="slick_Item">
+                            <div class="item_Product_img">
+                                <img src="image/slide_product/img1.webp" alt="">
+                                <img src="image/suggestion_img/freeShip.png" class="img_freeshipp">
+                            </div>
+                            <div class="title">
+                                <p
+                                    style="background: rgb(242, 242, 242); line-height: 12px; display: inline-block; padding: 0px 4px; font-size: 9px; margin: 0px 4px 0px 0px; position: relative; top: -1px; border-radius: 2px;">
+                                    Ad</p>
+                                <h3>Máy Làm Mát Không Khí Sunhouse SHD7719 - Hàng Chính Hãng</h3>
+                            </div>
+                            <div class="bottom">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div
+                                    style="display: flex; align-items: center; color: rgb(120, 120, 120); line-height: normal; font-size: 11px; padding-left: 4px;">
+                                    <div style="width: 1px; height: 9px; background-color: rgb(199, 199, 199);"></div>
+                                    <div data-view-id="pdp_quantity_sold" style="padding-left: 6px;">Đã bán 29</div>
+                                </div>
+                            </div>
+                            <p class="price has-discount">3.699.000 ₫<span class="percent">-36%</span></p>
+                        </div>
+                        <div class="slick_Item">
+                            <div class="item_Product_img">
+                                <img src="image/slide_product/img2.webp" alt="">
+                                <img src="image/suggestion_img/freeShip.png" class="img_freeshipp">
+                            </div>
+                            <div class="title">
+                                <p
+                                    style="background: rgb(242, 242, 242); line-height: 12px; display: inline-block; padding: 0px 4px; font-size: 9px; margin: 0px 4px 0px 0px; position: relative; top: -1px; border-radius: 2px;">
+                                    Ad</p>
+                                <h3>Máy Làm Mát Không Khí Sunhouse SHD7719 - Hàng Chính Hãng</h3>
+                            </div>
+                            <div class="bottom">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <div
+                                    style="display: flex; align-items: center; color: rgb(120, 120, 120); line-height: normal; font-size: 11px; padding-left: 4px;">
+                                    <div style="width: 1px; height: 9px; background-color: rgb(199, 199, 199);"></div>
+                                    <div data-view-id="pdp_quantity_sold" style="padding-left: 6px;">Đã bán 29</div>
+                                </div>
+                            </div>
+                            <p class="price has-discount">3.699.000 ₫<span class="percent">-36%</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="infomation_detail">
+        <div class="grid wide">
+            <div class="row">
+                <div class="left">
+                    <div class="group">
+                        <h2 class="block_title">Thông tin chi tiết</h2>
+                        <div class="content">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Xuất xứ thương hiệu</td>
+                                        <td>Việt Nam</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Xuất xứ</td>
+                                        <td>Trung Quốc</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Model</td>
+                                        <td>0411BR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trọng lượng</td>
+                                        <td>8 kgs</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Chất liệu</td>
+                                        <td>
+                                            <p>Chất liệu nhựa cao cấp</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dung tích</td>
+                                        <td>8 lít</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Điện áp</td>
+                                        <td>AC 220V</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Công suất</td>
+                                        <td>65W</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Điều khiển</td>
+                                        <td>Điều khiển cảm ứng</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lưu lượng không khí</td>
+                                        <td>400m3/h</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hẹn giờ</td>
+                                        <td>12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hướng dẫn sử dụng</td>
+                                        <td>
+                                            <p>Xem sách hướng dẫn trước khi sử dụng</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Thương hiệu</td>
+                                        <td>perfect us</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!------------------start section suggest todday -->
+
+    <section class="suggest_today">
+        <div class="grid wide">
+            <div class="container_suggest_today">
+                <div class="suggest_today_top">
+                    <span class="main_title">
+                        Khám phá thêm
+                    </span>
+                    <div class="menu_suggest">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="menu_close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+                <div class="suggest_today_bottom">
+                    <ul class="list_suggest_today">
+                        <li class="suggest_today_item active">
+                            <img src="image/suggestion__tab/1.png" alt="">
+                            <span class="tittle">Dành cho bạn</span>
+                        </li>
+                        <li class="suggest_today_item">
+                            <img src="image/suggestion__tab/2.png" alt="">
+                            <span class="tittle">Sale cực to</span>
+                        </li>
+                        <li class="suggest_today_item">
+                            <img src="image/suggestion__tab/3.png" alt="">
+                            <span class="tittle">Deal siêu hot</span>
+                        </li>
+                        <li class="suggest_today_item">
+                            <img src="image/suggestion__tab/4.png" alt="">
+                            <span class="tittle">Rẻ vô đối</span>
+                        </li>
+                        <li class="suggest_today_item">
+                            <img src="image/suggestion__tab/5.png" alt="">
+                            <span class="tittle">Đi chợ siêu sale</span>
+                        </li>
+                        <li class="suggest_today_item">
+                            <img src="image/suggestion__tab/6.png" alt="">
+                            <span class="tittle">hàng mới</span>
+                        </li>
+                        <li class="suggest_today_item">
+                            <img src="image/suggestion__tab/7.png" alt="">
+                            <span class="tittle">xu hướng thời trang</span>
+                        </li>
+                        <li class="suggest_today_item">
+                            <img src="image/suggestion__tab/8.png" alt="">
+                            <span class="tittle">không giới hạn</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container_suggest_today_body">
+                <ul class="list_container_suggest_today_body">
+                    <li class="container_suggest_today_body_item">
+                        <img src="image/suggestion_img/1.jpg" alt="">
+                        <div class="infor_suggest_today">
+                            <span class="title">
+                                Điện thoại iphone 13 256GB - Hàng chính hãng
+                            </span>
+                            <div class="vote_amount">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>| đã bán 234</span>
+                            </div>
+                            <div class="price">
+                                <span class="priceItem">120.000 đ</span>
+                                <span class="percent_discount">65%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="container_suggest_today_body_item">
+                        <img src="image/suggestion_img/2.jpg" alt="">
+                        <div class="infor_suggest_today">
+                            <span class="title">
+                                Điện thoại iphone 13 256GB - Hàng chính hãng
+                            </span>
+                            <div class="vote_amount">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>| đã bán 234</span>
+                            </div>
+                            <div class="price">
+                                <span class="priceItem">120.000 đ</span>
+                                <span class="percent_discount">65%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="container_suggest_today_body_item">
+                        <img src="image/suggestion_img/3.jpg" alt="">
+                        <div class="infor_suggest_today">
+                            <span class="title">
+                                Điện thoại iphone 13 256GB - Hàng chính hãng
+                            </span>
+                            <div class="vote_amount">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>| đã bán 234</span>
+                            </div>
+                            <div class="price">
+                                <span class="priceItem">120.000 đ</span>
+                                <span class="percent_discount">65%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="container_suggest_today_body_item">
+                        <img src="image/suggestion_img/4.png" alt="">
+                        <div class="infor_suggest_today">
+                            <span class="title">
+                                Điện thoại iphone 13 256GB - Hàng chính hãng
+                            </span>
+                            <div class="vote_amount">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>| đã bán 234</span>
+                            </div>
+                            <div class="price">
+                                <span class="priceItem">120.000 đ</span>
+                                <span class="percent_discount">65%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="container_suggest_today_body_item">
+                        <img src="image/suggestion_img/5.jpg" alt="">
+                        <div class="infor_suggest_today">
+                            <span class="title">
+                                Điện thoại iphone 13 256GB - Hàng chính hãng
+                            </span>
+                            <div class="vote_amount">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>| đã bán 234</span>
+                            </div>
+                            <div class="price">
+                                <span class="priceItem">120.000 đ</span>
+                                <span class="percent_discount">65%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="container_suggest_today_body_item">
+                        <img src="image/suggestion_img/6.jpg" alt="">
+                        <div class="infor_suggest_today">
+                            <span class="title">
+                                Điện thoại iphone 13 256GB - Hàng chính hãng
+                            </span>
+                            <div class="vote_amount">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>| đã bán 234</span>
+                            </div>
+                            <div class="price">
+                                <span class="priceItem">120.000 đ</span>
+                                <span class="percent_discount">65%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="container_suggest_today_body_item">
+                        <img src="image/suggestion_img/7.png" alt="">
+                        <div class="infor_suggest_today">
+                            <span class="title">
+                                Điện thoại iphone 13 256GB - Hàng chính hãng
+                            </span>
+                            <div class="vote_amount">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>| đã bán 234</span>
+                            </div>
+                            <div class="price">
+                                <span class="priceItem">120.000 đ</span>
+                                <span class="percent_discount">65%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="container_suggest_today_body_item">
+                        <img src="image/suggestion_img/8.jpg" alt="">
+                        <div class="infor_suggest_today">
+                            <span class="title">
+                                Điện thoại iphone 13 256GB - Hàng chính hãng
+                            </span>
+                            <div class="vote_amount">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>| đã bán 234</span>
+                            </div>
+                            <div class="price">
+                                <span class="priceItem">120.000 đ</span>
+                                <span class="percent_discount">65%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="container_suggest_today_body_item">
+                        <img src="image/suggestion_img/9.jpg" alt="">
+                        <div class="infor_suggest_today">
+                            <span class="title">
+                                Điện thoại iphone 13 256GB - Hàng chính hãng
+                            </span>
+                            <div class="vote_amount">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>| đã bán 234</span>
+                            </div>
+                            <div class="price">
+                                <span class="priceItem">120.000 đ</span>
+                                <span class="percent_discount">65%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="container_suggest_today_body_item">
+                        <img src="image/suggestion_img/10.png" alt="">
+                        <div class="infor_suggest_today">
+                            <span class="title">
+                                Điện thoại iphone 13 256GB - Hàng chính hãng
+                            </span>
+                            <div class="vote_amount">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>| đã bán 234</span>
+                            </div>
+                            <div class="price">
+                                <span class="priceItem">120.000 đ</span>
+                                <span class="percent_discount">65%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="container_suggest_today_body_item">
+                        <img src="image/suggestion_img/11.png" alt="">
+                        <div class="infor_suggest_today">
+                            <span class="title">
+                                Điện thoại iphone 13 256GB - Hàng chính hãng
+                            </span>
+                            <div class="vote_amount">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>| đã bán 234</span>
+                            </div>
+                            <div class="price">
+                                <span class="priceItem">120.000 đ</span>
+                                <span class="percent_discount">65%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="container_suggest_today_body_item">
+                        <img src="image/suggestion_img/12.jpg" alt="">
+                        <div class="infor_suggest_today">
+                            <span class="title">
+                                Điện thoại iphone 13 256GB - Hàng chính hãng
+                            </span>
+                            <div class="vote_amount">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>| đã bán 234</span>
+                            </div>
+                            <div class="price">
+                                <span class="priceItem">120.000 đ</span>
+                                <span class="percent_discount">65%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="container_suggest_today_body_item">
+                        <img src="image/suggestion_img/13.jpg" alt="">
+                        <div class="infor_suggest_today">
+                            <span class="title">
+                                Điện thoại iphone 13 256GB - Hàng chính hãng
+                            </span>
+                            <div class="vote_amount">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>| đã bán 234</span>
+                            </div>
+                            <div class="price">
+                                <span class="priceItem">120.000 đ</span>
+                                <span class="percent_discount">65%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="container_suggest_today_body_item">
+                        <img src="image/suggestion_img/14.png" alt="">
+                        <div class="infor_suggest_today">
+                            <span class="title">
+                                Điện thoại iphone 13 256GB - Hàng chính hãng
+                            </span>
+                            <div class="vote_amount">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>| đã bán 234</span>
+                            </div>
+                            <div class="price">
+                                <span class="priceItem">120.000 đ</span>
+                                <span class="percent_discount">65%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="container_suggest_today_body_item">
+                        <img src="image/suggestion_img/15.jpg" alt="">
+                        <div class="infor_suggest_today">
+                            <span class="title">
+                                Điện thoại iphone 13 256GB - Hàng chính hãng
+                            </span>
+                            <div class="vote_amount">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>| đã bán 234</span>
+                            </div>
+                            <div class="price">
+                                <span class="priceItem">120.000 đ</span>
+                                <span class="percent_discount">65%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="container_suggest_today_body_item">
+                        <img src="image/suggestion_img/16.jpg" alt="">
+                        <div class="infor_suggest_today">
+                            <span class="title">
+                                Điện thoại iphone 13 256GB - Hàng chính hãng
+                            </span>
+                            <div class="vote_amount">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>| đã bán 234</span>
+                            </div>
+                            <div class="price">
+                                <span class="priceItem">120.000 đ</span>
+                                <span class="percent_discount">65%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="container_suggest_today_body_item">
+                        <img src="image/suggestion_img/17.jpg" alt="">
+                        <div class="infor_suggest_today">
+                            <span class="title">
+                                Điện thoại iphone 13 256GB - Hàng chính hãng
+                            </span>
+                            <div class="vote_amount">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>| đã bán 234</span>
+                            </div>
+                            <div class="price">
+                                <span class="priceItem">120.000 đ</span>
+                                <span class="percent_discount">65%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="container_suggest_today_body_item">
+                        <img src="image/suggestion_img/18.jpg" alt="">
+                        <div class="infor_suggest_today">
+                            <span class="title">
+                                Điện thoại iphone 13 256GB - Hàng chính hãng
+                            </span>
+                            <div class="vote_amount">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>| đã bán 234</span>
+                            </div>
+                            <div class="price">
+                                <span class="priceItem">120.000 đ</span>
+                                <span class="percent_discount">65%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="container_suggest_today_body_item">
+                        <img src="image/suggestion_img/19.jpg" alt="">
+                        <div class="infor_suggest_today">
+                            <span class="title">
+                                Điện thoại iphone 13 256GB - Hàng chính hãng
+                            </span>
+                            <div class="vote_amount">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>| đã bán 234</span>
+                            </div>
+                            <div class="price">
+                                <span class="priceItem">120.000 đ</span>
+                                <span class="percent_discount">65%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="container_suggest_today_body_item">
+                        <img src="image/suggestion_img/20.jpg" alt="">
+                        <div class="infor_suggest_today">
+                            <span class="title">
+                                Điện thoại iphone 13 256GB - Hàng chính hãng
+                            </span>
+                            <div class="vote_amount">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>| đã bán 234</span>
+                            </div>
+                            <div class="price">
+                                <span class="priceItem">120.000 đ</span>
+                                <span class="percent_discount">65%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="container_suggest_today_body_item">
+                        <img src="image/suggestion_img/21.jpg" alt="">
+                        <div class="infor_suggest_today">
+                            <span class="title">
+                                Điện thoại iphone 13 256GB - Hàng chính hãng
+                            </span>
+                            <div class="vote_amount">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>| đã bán 234</span>
+                            </div>
+                            <div class="price">
+                                <span class="priceItem">120.000 đ</span>
+                                <span class="percent_discount">65%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="container_suggest_today_body_item">
+                        <img src="image/suggestion_img/22.jpg" alt="">
+                        <div class="infor_suggest_today">
+                            <span class="title">
+                                Điện thoại iphone 13 256GB - Hàng chính hãng
+                            </span>
+                            <div class="vote_amount">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>| đã bán 234</span>
+                            </div>
+                            <div class="price">
+                                <span class="priceItem">120.000 đ</span>
+                                <span class="percent_discount">65%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="container_suggest_today_body_item">
+                        <img src="image/suggestion_img/23.png" alt="">
+                        <div class="infor_suggest_today">
+                            <span class="title">
+                                Điện thoại iphone 13 256GB - Hàng chính hãng
+                            </span>
+                            <div class="vote_amount">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>| đã bán 234</span>
+                            </div>
+                            <div class="price">
+                                <span class="priceItem">120.000 đ</span>
+                                <span class="percent_discount">65%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="container_suggest_today_body_item">
+                        <img src="image/suggestion_img/24.jpg" alt="">
+                        <div class="infor_suggest_today">
+                            <span class="title">
+                                Điện thoại iphone 13 256GB - Hàng chính hãng
+                            </span>
+                            <div class="vote_amount">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>| đã bán 234</span>
+                            </div>
+                            <div class="price">
+                                <span class="priceItem">120.000 đ</span>
+                                <span class="percent_discount">65%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="container_suggest_today_body_item">
+                        <img src="image/suggestion_img/25.jpg" alt="">
+                        <div class="infor_suggest_today">
+                            <span class="title">
+                                Điện thoại iphone 13 256GB - Hàng chính hãng
+                            </span>
+                            <div class="vote_amount">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>| đã bán 234</span>
+                            </div>
+                            <div class="price">
+                                <span class="priceItem">120.000 đ</span>
+                                <span class="percent_discount">65%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="container_suggest_today_body_item">
+                        <img src="image/suggestion_img/26.png" alt="">
+                        <div class="infor_suggest_today">
+                            <span class="title">
+                                Điện thoại iphone 13 256GB - Hàng chính hãng
+                            </span>
+                            <div class="vote_amount">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>| đã bán 234</span>
+                            </div>
+                            <div class="price">
+                                <span class="priceItem">120.000 đ</span>
+                                <span class="percent_discount">65%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="container_suggest_today_body_item">
+                        <img src="image/suggestion_img/27.jpg" alt="">
+                        <div class="infor_suggest_today">
+                            <span class="title">
+                                Điện thoại iphone 13 256GB - Hàng chính hãng
+                            </span>
+                            <div class="vote_amount">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>| đã bán 234</span>
+                            </div>
+                            <div class="price">
+                                <span class="priceItem">120.000 đ</span>
+                                <span class="percent_discount">65%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="container_suggest_today_body_item">
+                        <img src="image/suggestion_img/28.png" alt="">
+                        <div class="infor_suggest_today">
+                            <span class="title">
+                                Điện thoại iphone 13 256GB - Hàng chính hãng
+                            </span>
+                            <div class="vote_amount">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>| đã bán 234</span>
+                            </div>
+                            <div class="price">
+                                <span class="priceItem">120.000 đ</span>
+                                <span class="percent_discount">65%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="container_suggest_today_body_item">
+                        <img src="image/suggestion_img/29.jpg" alt="">
+                        <div class="infor_suggest_today">
+                            <span class="title">
+                                Điện thoại iphone 13 256GB - Hàng chính hãng
+                            </span>
+                            <div class="vote_amount">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>| đã bán 234</span>
+                            </div>
+                            <div class="price">
+                                <span class="priceItem">120.000 đ</span>
+                                <span class="percent_discount">65%</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="container_suggest_today_body_item">
+                        <img src="image/suggestion_img/30.jpg" alt="">
+                        <div class="infor_suggest_today">
+                            <span class="title">
+                                Điện thoại iphone 13 256GB - Hàng chính hãng
+                            </span>
+                            <div class="vote_amount">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span>| đã bán 234</span>
+                            </div>
+                            <div class="price">
+                                <span class="priceItem">120.000 đ</span>
+                                <span class="percent_discount">65%</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="view_more"><a href="#">Xem thêm</a></div>
+            </div>
+        </div>
+    </section>
+    <!-----------------------section footer start----------------------->
+    <section class="footer">
+        <div class="grid wide">
+            <div class="infomation" style="padding : 16px 0;">
+                <ul class="list_container_infomation">
+                    <li class="container_infomation_item">
+                        <h3 class="heading">
+                            Hỗ trợ khách hàng
+                        </h3>
+                        <p class="hot-line">
+                            Hotline:
+                            <a href="#">1900-6035</a> <br />
+                            (1000 đ/phút, 8-21h kể cả T7, CN)
+                        </p>
+                        <a href="#" class="footer_links">Các câu hỏi thường gặp</a>
+                        <a href="#" class="footer_links">Gửi yêu cầu hỗ trợ</a>
+                        <a href="#" class="footer_links">Hướng dẫn đặt hàng</a>
+                        <a href="#" class="footer_links">Phương thức vận chuyển</a>
+                        <a href="#" class="footer_links">Chính sách đổi trả</a>
+                        <a href="#" class="footer_links">Hướng dẫn trả góp</a>
+                        <a href="#" class="footer_links">Chính sách hàng nhập khẩu</a>
+                        <p class="footer_links_title">
+                            Hỗ trợ khách hàng:
+                            <a class="footer_links" href="#" style="padding-left: 2px;">hotro@tiki.vn</a>
+                        </p>
+                        <p class="footer_links_title">
+                            Báo lỗi bảo mật:
+                            <a class="footer_links" href="#" style="padding-left:2px;">security@tiki.vn</a>
+                        </p>
+                    </li>
+                    <li class="container_infomation_item">
+                        <h3 class="heading">Về Tiki</h3>
+                        <a href="#" class="footer_links">Giới thiệu Tiki</a>
+                        <a href="#" class="footer_links">Tuyển dụng</a>
+                        <a href="#" class="footer_links">Chính sách bảo mật thanh toán</a>
+                        <a href="#" class="footer_links">Chính sách bảo mật thông tin cá nhân</a>
+                        <a href="#" class="footer_links">Chính sách giải quyết khiếu nại</a>
+                        <a href="#" class="footer_links">Điều khoản sử dụng</a>
+                        <a href="#" class="footer_links">Giới thiệu Tiki Xu</a>
+                        <a href="#" class="footer_links">Tiếp thị liên kết cùng Tiki</a>
+                        <a href="#" class="footer_links">Bán hàng doanh nghiệp</a>
+                    </li>
+                    <li class="container_infomation_item">
+                        <h3 class="heading">Hợp tác và liên kết</h3>
+                        <a href="" class="footer_links">Quy chế hoạt động Sàn GDTMĐT</a>
+                        <a href="" class="footer_links">Bán hàng cùng Tiki</a>
+                        <h3 class="heading sub-title">Chứng nhận bởi</h3>
+                        <div class="img_certification">
+                            <a href="" class="footer_certification">
+                                <img class="certification-img" src="image/footer/bo-cong-thuong-2.png" alt="" />
+                            </a>
+                            <a href="" class="footer_certification">
+                                <img class="certification-img" src="image/footer/bo-cong-thuong.svg" alt="" />
+                            </a>
+                    </li>
+
+                    <li class="container_infomation_item">
+                        <h3 class="heading">Phương thức thanh toán</h3>
+                        <div class="payment">
+                            <img src="image/footer/pay.png" alt="" class="pay" />
+                        </div>
+
+                        <h3 class="heading sub-title">Dịch vụ giao hàng</h3>
+                        <a href="#" class="tiki_now">
+                            <img src="image/footer/tikinow.png" alt="" />
+                        </a>
+                    </li>
+                    <li class="container_infomation_item">
+                        <h3 class="heading">Kết nối với chúng tôi</h3>
+                        <a href="#" class="tiki_now">
+                            <img src="image/footer/fb-ytb.png" alt="" />
+                        </a>
+                        <h3 class="heading sub-title">Tải ứng dụng trên điện thoại</h3>
+                        <div class="download">
+                            <img src="image/footer/qrcode.png" alt="" class="download_qr" />
+                            <div class="download_link">
+                                <a href="" class="apps">
+                                    <img src="image/footer/appstore.png" alt="" class="app" />
+                                </a>
+                                <a href="" class="apps">
+                                    <img src="image/footer/playstore.png" alt="" class="app" />
+                                </a>
+                            </div>
+                        </div>
+            </div>
+            </li>
+            </ul>
+        </div>
+        </div>
+
+    </section>
+    <!-----------------------------script -------------------->
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/detail.js"></script>
+</body>
+
+</html>
