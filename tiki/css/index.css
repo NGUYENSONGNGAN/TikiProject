@@ -150,10 +150,14 @@
   display: -ms-flexbox;
   display: flex;
   padding: 12px 0px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   cursor: pointer;
+}
+
+.body_detail_content .body_detail_content_left .delivery_zone .delivery_zone__heading span {
+  margin-left: 5px;
 }
 
 .body_detail_content .body_detail_content_left .delivery_zone .delivery_zone__heading span.address {

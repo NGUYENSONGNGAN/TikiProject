@@ -120,9 +120,11 @@
             .delivery_zone__heading {
                 display: flex;
                 padding: 12px 0px;
-                justify-content: space-between;
+                align-items: center;
                 cursor: pointer;
-
+                span{
+                    margin-left: 5px;
+                }
                 span.address {
                     text-decoration: underline;
                     font-size: 15px;
