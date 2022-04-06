@@ -879,7 +879,7 @@ li.container_infomation_item {
 /* ------------------nav mobile ------------- */
 
 .nav_mobile .container_nav_mobile {
-  width: 400px;
+  width: 100%;
   position: fixed;
   bottom: 0px;
   z-index: 20000000;
@@ -909,7 +909,7 @@ li.container_infomation_item {
 
 /* -----------------header mobile------------------- */
 .header_mobile {
-  width: 400px;
+  width: 100%;
   align-items: center;
   padding: 0px 16px;
   height: 56px;
@@ -1130,7 +1130,7 @@ li.container_infomation_item {
   }
 
   .body_detail_content .body_detail_content_left .delivery_zone .delivery_zone__heading span {
-    font-size: 10px;
+    font-size: 16px;
   }
 
   .container_suggest_today_body {
@@ -1139,6 +1139,19 @@ li.container_infomation_item {
   .container_suggest_today .header_title
   {
     display: flex;
+  }
+  .body_detail_content_right
+  {
+    width: 100% !important;
+  }
+  .body_detail_content
+  {
+    overflow: hidden;
+  }
+  .delivery_zone__heading,
+  .delivery_zone__inner
+  {
+    width: 152%;
   }
 }
 

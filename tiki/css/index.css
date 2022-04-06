@@ -585,7 +585,7 @@
 }
 
 .infomation_detail .left .group .content {
-  width: 920px;
+  width: 100%;
   padding: 0px 16px 16px;
   display: inline-block;
   color: #242424;
