@@ -1091,6 +1091,7 @@ li.container_infomation_item {
   /* -------------------------tiki detail ------------------- */
   .product_detail_main {
     flex-direction: column;
+    padding-top: 50px;
   }
 
   .product_detail_main .product_detail_imgDetail {
