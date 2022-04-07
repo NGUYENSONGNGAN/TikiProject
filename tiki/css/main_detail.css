@@ -1164,6 +1164,10 @@ li.container_infomation_item {
    margin: 0;
    margin-bottom:5px
  }
+ .product_slide
+ {
+   display:none;
+ }
 }
 .product_slide .row
 {
