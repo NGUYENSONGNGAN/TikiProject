@@ -1163,6 +1163,7 @@ li.container_suggest_today_body_item span.title
     line-height: 20px;
     word-break: break-word;
     font-weight: initial;
+    color: #000;
 }
 li.container_suggest_today_body_item .vote_amount
 {
