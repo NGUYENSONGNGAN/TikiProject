@@ -1,0 +1,152 @@
+$background_color : rgb(255, 255, 255);
+.product_slide {
+    margin-bottom: 16px;
+   
+    border-radius: 4px;
+    .grid{
+        background-color: $background_color;
+    .block_title {
+        color: rgb(51, 51, 51);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 32px;
+        padding: 8px 16px;
+        text-transform: capitalize;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px;
+
+    }
+
+    .slider_container {
+        background-color: $background_color;
+        border-radius: 4px;
+        overflow: hidden;
+        min-height: 302px;
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+
+
+        .slick_list {
+            margin-left: 0px;
+            margin-right: 0px;
+
+            .slick_track {
+                width: 7452px;
+                opacity: 1;
+                transform: translate3d(0px, 0px, 0px);
+                display: flex;
+
+                .slick_Item {
+                    outline: none;
+                    width: 205px;
+                    padding: 12px;
+
+                    .item_Product_img {
+                        position: relative;
+                        width: 100%;
+                        margin-bottom: 12px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        .img_freeshipp {
+                            width: 136px;
+                            height: 24px;
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                        }
+                    }
+
+                    .title {
+                        max-height: 40px;
+                        height: auto;
+                        overflow: hidden;
+                        line-height: 19px;
+
+                        h3 {
+                            margin: 0px;
+                            font-weight: 400;
+                            display: contents;
+                            font-size: 13px;
+                        }
+
+                    }
+
+                    .bottom {
+                        flex: 1 1 0%;
+                        display: flex;
+                        justify-content: normal;
+                        align-self: stretch;
+
+                        .stars {
+                            color: #fdd836;
+                            font-size: 10px;
+
+                            i {
+                                font-size: 10px;
+                            }
+                        }
+
+                    }
+
+                    .price {
+                        text-align: left;
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-weight: 500;
+                        color: rgb(56, 56, 61);
+                        margin: 2px 0px 0px;
+                        display: flex;
+                        align-items: center;
+                        color: rgb(255, 66, 78);
+
+                        .percent {
+                            padding: 0px 2px;
+                            line-height: 14px;
+                            font-size: 12px;
+                            font-weight: 400;
+                            margin-left: 8px;
+                            border: 1px solid rgb(255, 66, 78);
+                            border-radius: 2px;
+                            background-color: rgb(255, 240, 241);
+                            color: rgb(255, 66, 78);
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .slick_arrow {
+            position: absolute;
+            font-size: 17px;
+            color: #333;
+            opacity: 0.3;
+            padding: 3px 8px;
+            background: #eee;
+            border: 1px solid black;
+            border-radius: 50%;
+            top: 50%;
+            z-index: 5;
+        }
+        .prev
+        {
+            left: 0;
+        }
+        .next
+        {
+            right: 0;
+        }
+        .slick_arrow:hover
+        {
+            opacity: 1;
+        }
+    }
+}
+}
