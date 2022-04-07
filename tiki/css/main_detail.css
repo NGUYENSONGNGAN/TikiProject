@@ -1164,9 +1164,13 @@ li.container_infomation_item {
    margin: 0;
    margin-bottom:5px
  }
- .product_slide
+ .body_detail_content .body_detail_content_left .delivery_zone .delivery_zone__heading span.address_change
  {
-   display:none;
+   font-size:13px !important;
+ }
+ .body_detail_content .body_detail_content_left 
+ {
+   padding-right: 0!important;
  }
 }
 .product_slide .row

@@ -10,10 +10,9 @@ btn_next.onclick = function () {
     document.querySelector(".slick_track").style.transform = "translateX(0%)";
   }
  */
-
   var swiper = new Swiper(".slick_list", {
-    slidesPerView: 6,
-    slidesPerGroup: 6,
+    slidesPerView: 2,
+    slidesPerGroup: 2,
     loop: true,
     loopFillGroupWithBlank: true,
     pagination: {
@@ -23,6 +22,20 @@ btn_next.onclick = function () {
     navigation: {
       nextEl: ".btn_next_slide",
       prevEl: ".btn_prev_slide"
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+      1024: {
+        slidesPerView: 6,
+        spaceBetween: 50,
+      }
     }
   });
   
