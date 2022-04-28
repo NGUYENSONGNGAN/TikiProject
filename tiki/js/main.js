@@ -157,3 +157,42 @@ menuclose.onclick = function() {
 }
 
 
+/* ------------------------call API ---------------------------*/
+/* fetch('http://havanlong.com/api/?p=1&per=20')
+  .then(response => response.json())
+  .then(data => console.log(data)); */
+
+
+  var postApi = "http://havanlong.com/api/";
+fetch(postApi)
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    var htmls = data.item.map((item) => {
+      return `<li class="container_suggest_today_body_item">
+      <a href="detail.html">
+      <img src=${item.thumbnail} alt="">
+      <div class="infor_suggest_today">
+          <span class="title">
+             ${item.title}
+          </span>
+          <div class="vote_amount">
+          
+              <span>${item.sold}</span>
+          </div>
+          <div class="price">
+              <span class="priceItem"> ${item.price} đ</span>
+              <span class="percent_discount"> ${item.discount} %</span>
+          </div>
+      </div>
+  </a>
+  </li>`;
+    });
+
+    var html = htmls.join("");
+    document.getElementById("ngan").innerHTML = html;
+  })
+  .catch((err) => {
+    console.log("Có lỗi");
+  });
